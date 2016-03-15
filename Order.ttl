@@ -1,0 +1,237 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <https://github.com/vocol/salesforce/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sf:accountId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Account ID",
+        "Account ID"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal,
+        sf:Account .
+
+sf:activatedById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Activated By ID"^^xsd:string,
+        "Activated By ID" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:activatedDate a owl:DatatypeProperty ;
+    rdfs:label "Activated Date" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:billToContactId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Bill To Contact ID",
+        "Bill To Contact ID"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal,
+        sf:Contact .
+
+sf:billingCity a owl:DatatypeProperty ;
+    rdfs:label "Billing City"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:billingCountry a owl:DatatypeProperty ;
+    rdfs:label "Billing Country"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:billingPostalCode a owl:DatatypeProperty ;
+    rdfs:label "Billing Zip/Postal Code"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:billingState a owl:DatatypeProperty ;
+    rdfs:label "Billing State/Province"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:billingStreet a owl:DatatypeProperty ;
+    rdfs:label "Billing Street"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:companyAuthorizedById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Company Authorized By ID",
+        "Company Authorized By ID"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:companyAuthorizedDate a owl:DatatypeProperty ;
+    rdfs:label "Company Authorized Date" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:contractId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Contract ID"^^xsd:string,
+        "Contract ID" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal,
+        sf:Contract .
+
+sf:createdById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Created By ID"^^xsd:string,
+        "Created By ID" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:createdDate a owl:DatatypeProperty ;
+    rdfs:label "Created Date" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:customerAuthorizedById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Customer Authorized By ID",
+        "Customer Authorized By ID"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal,
+        sf:Contact .
+
+sf:customerAuthorizedDate a owl:DatatypeProperty ;
+    rdfs:label "Customer Authorized Date" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:description a owl:DatatypeProperty ;
+    rdfs:label "Internal Comments"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:effectiveDate a owl:DatatypeProperty ;
+    rdfs:label "Order Start Date" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:endDate a owl:DatatypeProperty ;
+    rdfs:label "Order End Date" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:id a owl:DatatypeProperty ;
+    rdfs:label "Order ID"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:isDeleted a owl:DatatypeProperty ;
+    rdfs:label "Deleted" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:isReductionOrder a owl:DatatypeProperty ;
+    rdfs:label "Reduction Order" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:lastModifiedById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Last Modified By ID",
+        "Last Modified By ID"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:lastModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Modified Date" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:name a owl:DatatypeProperty ;
+    rdfs:label "Order Name"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:orderNumber a owl:DatatypeProperty ;
+    rdfs:label "Order Number"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:orderReferenceNumber a owl:DatatypeProperty ;
+    rdfs:label "Order Reference Number"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:poDate a owl:DatatypeProperty ;
+    rdfs:label "PO Date" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:poNumber a owl:DatatypeProperty ;
+    rdfs:label "PO Number"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:shipToContactId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Ship To Contact ID",
+        "Ship To Contact ID"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal,
+        sf:Contact .
+
+sf:shippingCity a owl:DatatypeProperty ;
+    rdfs:label "Shipping City"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:shippingCountry a owl:DatatypeProperty ;
+    rdfs:label "Shipping Country"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:shippingPostalCode a owl:DatatypeProperty ;
+    rdfs:label "Shipping Zip/Postal Code"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:shippingState a owl:DatatypeProperty ;
+    rdfs:label "Shipping State/Province"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:shippingStreet a owl:DatatypeProperty ;
+    rdfs:label "Shipping Street"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:status a owl:DatatypeProperty ;
+    rdfs:label "Status"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:statusCode a owl:DatatypeProperty ;
+    rdfs:label "Status Category"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:systemModstamp a owl:DatatypeProperty ;
+    rdfs:label "System Modstamp" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:totalAmount a owl:DatatypeProperty ;
+    rdfs:label "Order Amount" ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:type a owl:DatatypeProperty ;
+    rdfs:label "Order Type"^^xsd:string ;
+    rdfs:domain sf:Order ;
+    rdfs:range rdfs:Literal .
+
+sf:Order a owl:Class ;
+    rdfs:label "Order" .
+

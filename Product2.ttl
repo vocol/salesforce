@@ -1,0 +1,76 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <https://github.com/vocol/salesforce/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sf:createdById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Created By ID"^^xsd:string,
+        "Created By ID" ;
+    rdfs:domain sf:Product2 ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:createdDate a owl:DatatypeProperty ;
+    rdfs:label "Created Date" ;
+    rdfs:domain sf:Product2 ;
+    rdfs:range rdfs:Literal .
+
+sf:description a owl:DatatypeProperty ;
+    rdfs:label "Product Description"^^xsd:string ;
+    rdfs:domain sf:Product2 ;
+    rdfs:range rdfs:Literal .
+
+sf:family a owl:DatatypeProperty ;
+    rdfs:label "Product Family"^^xsd:string ;
+    rdfs:domain sf:Product2 ;
+    rdfs:range rdfs:Literal .
+
+sf:id a owl:DatatypeProperty ;
+    rdfs:label "Product ID"^^xsd:string ;
+    rdfs:domain sf:Product2 ;
+    rdfs:range rdfs:Literal .
+
+sf:isActive a owl:DatatypeProperty ;
+    rdfs:label "Active" ;
+    rdfs:domain sf:Product2 ;
+    rdfs:range rdfs:Literal .
+
+sf:isDeleted a owl:DatatypeProperty ;
+    rdfs:label "Deleted" ;
+    rdfs:domain sf:Product2 ;
+    rdfs:range rdfs:Literal .
+
+sf:lastModifiedById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Last Modified By ID"^^xsd:string,
+        "Last Modified By ID" ;
+    rdfs:domain sf:Product2 ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:lastModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Modified Date" ;
+    rdfs:domain sf:Product2 ;
+    rdfs:range rdfs:Literal .
+
+sf:name a owl:DatatypeProperty ;
+    rdfs:label "Product Name"^^xsd:string ;
+    rdfs:domain sf:Product2 ;
+    rdfs:range rdfs:Literal .
+
+sf:productCode a owl:DatatypeProperty ;
+    rdfs:label "Product Code"^^xsd:string ;
+    rdfs:domain sf:Product2 ;
+    rdfs:range rdfs:Literal .
+
+sf:systemModstamp a owl:DatatypeProperty ;
+    rdfs:label "System Modstamp" ;
+    rdfs:domain sf:Product2 ;
+    rdfs:range rdfs:Literal .
+
+sf:Product2 a owl:Class ;
+    rdfs:label "Product2" .
+

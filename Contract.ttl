@@ -1,0 +1,199 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <https://github.com/vocol/salesforce/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sf:accountId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Account ID",
+        "Account ID"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal,
+        sf:Account .
+
+sf:activatedById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Activated By ID"^^xsd:string,
+        "Activated By ID" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:activatedDate a owl:DatatypeProperty ;
+    rdfs:label "Activated Date" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:billingCity a owl:DatatypeProperty ;
+    rdfs:label "Billing City"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:billingCountry a owl:DatatypeProperty ;
+    rdfs:label "Billing Country"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:billingPostalCode a owl:DatatypeProperty ;
+    rdfs:label "Billing Zip/Postal Code"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:billingState a owl:DatatypeProperty ;
+    rdfs:label "Billing State/Province"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:billingStreet a owl:DatatypeProperty ;
+    rdfs:label "Billing Street"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:companySignedDate a owl:DatatypeProperty ;
+    rdfs:label "Company Signed Date" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:companySignedId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Company Signed By ID"^^xsd:string,
+        "Company Signed By ID" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:contractNumber a owl:DatatypeProperty ;
+    rdfs:label "Contract Number"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:contractTerm a owl:DatatypeProperty ;
+    rdfs:label "Contract Term" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:createdById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Created By ID"^^xsd:string,
+        "Created By ID" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:createdDate a owl:DatatypeProperty ;
+    rdfs:label "Created Date" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:customerSignedDate a owl:DatatypeProperty ;
+    rdfs:label "Customer Signed Date" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:customerSignedId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Customer Signed By ID",
+        "Customer Signed By ID"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal,
+        sf:Contact .
+
+sf:customerSignedTitle a owl:DatatypeProperty ;
+    rdfs:label "Customer Signed Title"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:description a owl:DatatypeProperty ;
+    rdfs:label "Description"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:endDate a owl:DatatypeProperty ;
+    rdfs:label "Contract End Date" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:id a owl:DatatypeProperty ;
+    rdfs:label "Contract ID"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:isDeleted a owl:DatatypeProperty ;
+    rdfs:label "Deleted" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:lastActivityDate a owl:DatatypeProperty ;
+    rdfs:label "Last Activity" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:lastApprovedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Approved Date" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:lastModifiedById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Last Modified By ID"^^xsd:string,
+        "Last Modified By ID" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:lastModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Modified Date" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:ownerExpirationNotice a owl:DatatypeProperty ;
+    rdfs:label "Owner Expiration Notice"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:ownerId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Owner ID"^^xsd:string,
+        "Owner ID" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:pricebook2Id a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Price Book ID",
+        "Price Book ID"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal,
+        sf:Pricebook2 .
+
+sf:specialTerms a owl:DatatypeProperty ;
+    rdfs:label "Special Terms"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:startDate a owl:DatatypeProperty ;
+    rdfs:label "Contract Start Date" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:status a owl:DatatypeProperty ;
+    rdfs:label "Status"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:statusCode a owl:DatatypeProperty ;
+    rdfs:label "Status Category"^^xsd:string ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:systemModstamp a owl:DatatypeProperty ;
+    rdfs:label "System Modstamp" ;
+    rdfs:domain sf:Contract ;
+    rdfs:range rdfs:Literal .
+
+sf:Contract a owl:Class ;
+    rdfs:label "Contract" .
+

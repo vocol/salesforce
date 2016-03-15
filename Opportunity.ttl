@@ -1,0 +1,213 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <https://github.com/vocol/salesforce/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sf:accountId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Account ID"^^xsd:string,
+        "Account ID" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal,
+        sf:Account .
+
+sf:amount a owl:DatatypeProperty ;
+    rdfs:label "Amount" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:campaignId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Campaign ID"^^xsd:string,
+        "Campaign ID" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal,
+        sf:Campaign .
+
+sf:closeDate a owl:DatatypeProperty ;
+    rdfs:label "Close Date" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:createdById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Created By ID",
+        "Created By ID"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:createdDate a owl:DatatypeProperty ;
+    rdfs:label "Created Date" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:currentGenerators__c a owl:DatatypeProperty ;
+    rdfs:label "Current Generator(s)"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:deliveryInstallationStatus__c a owl:DatatypeProperty ;
+    rdfs:label "Delivery/Installation Status"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:description a owl:DatatypeProperty ;
+    rdfs:label "Description"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:expectedRevenue a owl:DatatypeProperty ;
+    rdfs:label "Expected Amount" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:fiscal a owl:DatatypeProperty ;
+    rdfs:label "Fiscal Period"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:fiscalQuarter a owl:DatatypeProperty ;
+    rdfs:label "Fiscal Quarter" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:fiscalYear a owl:DatatypeProperty ;
+    rdfs:label "Fiscal Year" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:forecastCategory a owl:DatatypeProperty ;
+    rdfs:label "Forecast Category"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:forecastCategoryName a owl:DatatypeProperty ;
+    rdfs:label "Forecast Category"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:hasOpportunityLineItem a owl:DatatypeProperty ;
+    rdfs:label "Has Line Item" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:id a owl:DatatypeProperty ;
+    rdfs:label "Opportunity ID"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:isClosed a owl:DatatypeProperty ;
+    rdfs:label "Closed" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:isDeleted a owl:DatatypeProperty ;
+    rdfs:label "Deleted" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:isPrivate a owl:DatatypeProperty ;
+    rdfs:label "Private" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:isWon a owl:DatatypeProperty ;
+    rdfs:label "Won" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:lastActivityDate a owl:DatatypeProperty ;
+    rdfs:label "Last Activity" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:lastModifiedById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Last Modified By ID",
+        "Last Modified By ID"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:lastModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Modified Date" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:leadSource a owl:DatatypeProperty ;
+    rdfs:label "Lead Source"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:mainCompetitors__c a owl:DatatypeProperty ;
+    rdfs:label "Main Competitor(s)"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:name a owl:DatatypeProperty ;
+    rdfs:label "Name"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:nextStep a owl:DatatypeProperty ;
+    rdfs:label "Next Step"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:orderNumber__c a owl:DatatypeProperty ;
+    rdfs:label "Order Number"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:ownerId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Owner ID",
+        "Owner ID"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:pricebook2Id a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Price Book ID",
+        "Price Book ID"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal,
+        sf:Pricebook2 .
+
+sf:probability a owl:DatatypeProperty ;
+    rdfs:label "Probability (%)" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:stageName a owl:DatatypeProperty ;
+    rdfs:label "Stage"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:systemModstamp a owl:DatatypeProperty ;
+    rdfs:label "System Modstamp" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:totalOpportunityQuantity a owl:DatatypeProperty ;
+    rdfs:label "Quantity" ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:trackingNumber__c a owl:DatatypeProperty ;
+    rdfs:label "Tracking Number"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:type a owl:DatatypeProperty ;
+    rdfs:label "Opportunity Type"^^xsd:string ;
+    rdfs:domain sf:Opportunity ;
+    rdfs:range rdfs:Literal .
+
+sf:Opportunity a owl:Class ;
+    rdfs:label "Opportunity" .
+

@@ -1,0 +1,289 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <https://github.com/vocol/salesforce/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sf:annualRevenue a owl:DatatypeProperty ;
+    rdfs:label "Annual Revenue" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:city a owl:DatatypeProperty ;
+    rdfs:label "City"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:cleanStatus a owl:DatatypeProperty ;
+    rdfs:label "Clean Status"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:company a owl:DatatypeProperty ;
+    rdfs:label "Company"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:companyDunsNumber a owl:DatatypeProperty ;
+    rdfs:label "Company D-U-N-S Number"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:convertedAccountId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Converted Account ID"^^xsd:string,
+        "Converted Account ID" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal,
+        sf:Account .
+
+sf:convertedContactId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Converted Contact ID"^^xsd:string,
+        "Converted Contact ID" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal,
+        sf:Contact .
+
+sf:convertedDate a owl:DatatypeProperty ;
+    rdfs:label "Converted Date" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:convertedOpportunityId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Converted Opportunity ID"^^xsd:string,
+        "Converted Opportunity ID" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal,
+        sf:Opportunity .
+
+sf:country a owl:DatatypeProperty ;
+    rdfs:label "Country"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:createdById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Created By ID",
+        "Created By ID"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:createdDate a owl:DatatypeProperty ;
+    rdfs:label "Created Date" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:currentGenerators__c a owl:DatatypeProperty ;
+    rdfs:label "Current Generator(s)"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:dandbCompanyId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "D&B Company ID"^^xsd:string,
+        "D&B Company ID" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal,
+        sf:DandBCompany .
+
+sf:description a owl:DatatypeProperty ;
+    rdfs:label "Description"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:email a owl:DatatypeProperty ;
+    rdfs:label "Email"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:emailBouncedDate a owl:DatatypeProperty ;
+    rdfs:label "Email Bounced Date" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:emailBouncedReason a owl:DatatypeProperty ;
+    rdfs:label "Email Bounced Reason"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:fax a owl:DatatypeProperty ;
+    rdfs:label "Fax"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:firstName a owl:DatatypeProperty ;
+    rdfs:label "First Name"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:id a owl:DatatypeProperty ;
+    rdfs:label "Lead ID"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:industry a owl:DatatypeProperty ;
+    rdfs:label "Industry"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:isConverted a owl:DatatypeProperty ;
+    rdfs:label "Converted" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:isDeleted a owl:DatatypeProperty ;
+    rdfs:label "Deleted" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:isUnreadByOwner a owl:DatatypeProperty ;
+    rdfs:label "Unread By Owner" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:jigsaw a owl:DatatypeProperty ;
+    rdfs:label "Data.com Key"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:jigsawContactId a owl:DatatypeProperty ;
+    rdfs:label "Jigsaw Contact ID"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:lastActivityDate a owl:DatatypeProperty ;
+    rdfs:label "Last Activity" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:lastModifiedById a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Last Modified By ID",
+        "Last Modified By ID"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal,
+        sf:User .
+
+sf:lastModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Modified Date" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:lastName a owl:DatatypeProperty ;
+    rdfs:label "Last Name"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:leadSource a owl:DatatypeProperty ;
+    rdfs:label "Lead Source"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:masterRecordId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Master Record ID",
+        "Master Record ID"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal,
+        sf:Lead .
+
+sf:mobilePhone a owl:DatatypeProperty ;
+    rdfs:label "Mobile Phone"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:name a owl:DatatypeProperty ;
+    rdfs:label "Full Name"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:numberOfEmployees a owl:DatatypeProperty ;
+    rdfs:label "Employees" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:numberofLocations__c a owl:DatatypeProperty ;
+    rdfs:label "Number of Locations" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:ownerId a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Owner ID"^^xsd:string,
+        "Owner ID" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal,
+        sf:Group .
+
+sf:phone a owl:DatatypeProperty ;
+    rdfs:label "Phone"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:postalCode a owl:DatatypeProperty ;
+    rdfs:label "Zip/Postal Code"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:primary__c a owl:DatatypeProperty ;
+    rdfs:label "Primary"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:productInterest__c a owl:DatatypeProperty ;
+    rdfs:label "Product Interest"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:rating a owl:DatatypeProperty ;
+    rdfs:label "Rating"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:sICCode__c a owl:DatatypeProperty ;
+    rdfs:label "SIC Code"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:salutation a owl:DatatypeProperty ;
+    rdfs:label "Salutation"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:state a owl:DatatypeProperty ;
+    rdfs:label "State/Province"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:status a owl:DatatypeProperty ;
+    rdfs:label "Status"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:street a owl:DatatypeProperty ;
+    rdfs:label "Street"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:systemModstamp a owl:DatatypeProperty ;
+    rdfs:label "System Modstamp" ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:title a owl:DatatypeProperty ;
+    rdfs:label "Title"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:website a owl:DatatypeProperty ;
+    rdfs:label "Website"^^xsd:string ;
+    rdfs:domain sf:Lead ;
+    rdfs:range rdfs:Literal .
+
+sf:Lead a owl:Class ;
+    rdfs:label "Lead" .
+
