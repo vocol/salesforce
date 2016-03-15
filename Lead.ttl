@@ -32,8 +32,8 @@ sf:companyDunsNumber a owl:DatatypeProperty ;
 
 sf:convertedAccountId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Converted Account ID"^^xsd:string,
-        "Converted Account ID" ;
+    rdfs:label "Converted Account ID",
+        "Converted Account ID"^^xsd:string ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:Account .
@@ -66,8 +66,8 @@ sf:country a owl:DatatypeProperty ;
 
 sf:createdById a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Created By ID",
-        "Created By ID"^^xsd:string ;
+    rdfs:label "Created By ID"^^xsd:string,
+        "Created By ID" ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:User .
@@ -84,8 +84,8 @@ sf:currentGenerators__c a owl:DatatypeProperty ;
 
 sf:dandbCompanyId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "D&B Company ID"^^xsd:string,
-        "D&B Company ID" ;
+    rdfs:label "D&B Company ID",
+        "D&B Company ID"^^xsd:string ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:DandBCompany .
@@ -213,8 +213,8 @@ sf:numberofLocations__c a owl:DatatypeProperty ;
 
 sf:ownerId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Owner ID"^^xsd:string,
-        "Owner ID" ;
+    rdfs:label "Owner ID",
+        "Owner ID"^^xsd:string ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:Group .

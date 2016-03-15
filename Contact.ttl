@@ -7,8 +7,8 @@
 
 sf:accountId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Account ID"^^xsd:string,
-        "Account ID" ;
+    rdfs:label "Account ID",
+        "Account ID"^^xsd:string ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal,
         sf:Account .
@@ -128,8 +128,8 @@ sf:lastCUUpdateDate a owl:DatatypeProperty ;
 
 sf:lastModifiedById a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Last Modified By ID",
-        "Last Modified By ID"^^xsd:string ;
+    rdfs:label "Last Modified By ID"^^xsd:string,
+        "Last Modified By ID" ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal,
         sf:User .

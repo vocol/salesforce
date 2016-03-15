@@ -61,8 +61,8 @@ sf:billingStreet a owl:DatatypeProperty ;
 
 sf:companyAuthorizedById a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Company Authorized By ID",
-        "Company Authorized By ID"^^xsd:string ;
+    rdfs:label "Company Authorized By ID"^^xsd:string,
+        "Company Authorized By ID" ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal,
         sf:User .
@@ -176,8 +176,8 @@ sf:poNumber a owl:DatatypeProperty ;
 
 sf:shipToContactId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Ship To Contact ID",
-        "Ship To Contact ID"^^xsd:string ;
+    rdfs:label "Ship To Contact ID"^^xsd:string,
+        "Ship To Contact ID" ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal,
         sf:Contact .

@@ -15,8 +15,8 @@ sf:accountId a owl:DatatypeProperty,
 
 sf:activatedById a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Activated By ID"^^xsd:string,
-        "Activated By ID" ;
+    rdfs:label "Activated By ID",
+        "Activated By ID"^^xsd:string ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal,
         sf:User .
@@ -76,8 +76,8 @@ sf:contractTerm a owl:DatatypeProperty ;
 
 sf:createdById a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Created By ID"^^xsd:string,
-        "Created By ID" ;
+    rdfs:label "Created By ID",
+        "Created By ID"^^xsd:string ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal,
         sf:User .
@@ -94,8 +94,8 @@ sf:customerSignedDate a owl:DatatypeProperty ;
 
 sf:customerSignedId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Customer Signed By ID",
-        "Customer Signed By ID"^^xsd:string ;
+    rdfs:label "Customer Signed By ID"^^xsd:string,
+        "Customer Signed By ID" ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal,
         sf:Contact .
@@ -137,8 +137,8 @@ sf:lastApprovedDate a owl:DatatypeProperty ;
 
 sf:lastModifiedById a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Last Modified By ID"^^xsd:string,
-        "Last Modified By ID" ;
+    rdfs:label "Last Modified By ID",
+        "Last Modified By ID"^^xsd:string ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal,
         sf:User .
@@ -155,8 +155,8 @@ sf:ownerExpirationNotice a owl:DatatypeProperty ;
 
 sf:ownerId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Owner ID"^^xsd:string,
-        "Owner ID" ;
+    rdfs:label "Owner ID",
+        "Owner ID"^^xsd:string ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal,
         sf:User .

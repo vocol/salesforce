@@ -7,8 +7,8 @@
 
 sf:accountId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Account ID"^^xsd:string,
-        "Account ID" ;
+    rdfs:label "Account ID",
+        "Account ID"^^xsd:string ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal,
         sf:Account .
