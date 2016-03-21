@@ -4,6 +4,39 @@
 @prefix sf: <https://github.com/vocol/salesforce/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+@prefix void:   <http://rdfs.org/ns/void#> .
+@prefix doap:   <http://usefulinc.com/ns/doap#> .
+
+sf: a owl:Ontology ;
+    rdfs:label "Salesforce"@en ;
+    rdfs:comment "A vocabulary which represents the Salesforce Data Model (v35.0)."@en ;
+    dct:creator <https://github.com/schroet> ;
+    dct:publisher <http://dbpedia.org/resource/University_of_Bonn> ;
+    dct:created "2016-03-01"^^xsd:date ;
+    dct:modified "2016-03-21"^^xsd:date ;
+    owl:versionInfo "SNAPSHOT" ;
+    void:vocabulary  # np00: to be completed
+        <http://purl.org/dc/terms/> ,
+        <http://www.w3.org/2004/02/skos/core#> ,
+        <http://purl.org/vocab/vann/> ,
+        <http://rdfs.org/ns/void#> ,
+        <http://purl.org/ontology/olo/core#> ,
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#> ,
+        <http://usefulinc.com/ns/doap#> ,
+        <http://schema.org/> ;
+    vann:preferredNamespacePrefix "sf" ;
+  # np00: need to be specified
+  #  vann:preferredNamespaceUri "http://purl.org/eis/vocab/scor#" ;
+    doap:homepage <https://github.com/vocol/salesforce> ;
+    doap:implements <https://developer.salesforce.com/docs/atlas.en-us.198.0.api.meta/api/data_model.htm> ;
+    doap:bug-database <https://github.com/vocol/salesforce/issues> ;
+    doap:download-page <https://github.com/vocol/salesforce/releases> ;
+    doap:wiki <https://github.com/vocol/salesforce/wiki> ;
+    doap:repository <https://github.com/vocol/salesforce.git> ;
+    rdfs:isDefinedBy sf: ;
+ .
 
 sf:amount a owl:DatatypeProperty ;
     rdfs:label "Amount" ;
