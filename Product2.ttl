@@ -43,14 +43,6 @@ sf:isDeleted a owl:DatatypeProperty ;
     rdfs:domain sf:Product2 ;
     rdfs:range rdfs:Literal .
 
-sf:lastModifiedById a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Last Modified By ID",
-        "Last Modified By ID"^^xsd:string ;
-    rdfs:domain sf:Product2 ;
-    rdfs:range rdfs:Literal,
-        sf:User .
-
 sf:lastModifiedDate a owl:DatatypeProperty ;
     rdfs:label "Last Modified Date" ;
     rdfs:domain sf:Product2 ;
@@ -63,11 +55,6 @@ sf:name a owl:DatatypeProperty ;
 
 sf:productCode a owl:DatatypeProperty ;
     rdfs:label "Product Code"^^xsd:string ;
-    rdfs:domain sf:Product2 ;
-    rdfs:range rdfs:Literal .
-
-sf:systemModstamp a owl:DatatypeProperty ;
-    rdfs:label "System Modstamp" ;
     rdfs:domain sf:Product2 ;
     rdfs:range rdfs:Literal .
 

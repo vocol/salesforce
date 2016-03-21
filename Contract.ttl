@@ -5,27 +5,6 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-sf:accountId a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Account ID",
-        "Account ID"^^xsd:string ;
-    rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal,
-        sf:Account .
-
-sf:activatedById a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Activated By ID",
-        "Activated By ID"^^xsd:string ;
-    rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal,
-        sf:User .
-
-sf:activatedDate a owl:DatatypeProperty ;
-    rdfs:label "Activated Date" ;
-    rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
-
 sf:billingCity a owl:DatatypeProperty ;
     rdfs:label "Billing City"^^xsd:string ;
     rdfs:domain sf:Contract ;
@@ -125,23 +104,10 @@ sf:isDeleted a owl:DatatypeProperty ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
-sf:lastActivityDate a owl:DatatypeProperty ;
-    rdfs:label "Last Activity" ;
-    rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
-
 sf:lastApprovedDate a owl:DatatypeProperty ;
     rdfs:label "Last Approved Date" ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
-
-sf:lastModifiedById a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Last Modified By ID",
-        "Last Modified By ID"^^xsd:string ;
-    rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal,
-        sf:User .
 
 sf:lastModifiedDate a owl:DatatypeProperty ;
     rdfs:label "Last Modified Date" ;
@@ -153,18 +119,10 @@ sf:ownerExpirationNotice a owl:DatatypeProperty ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
-sf:ownerId a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Owner ID",
-        "Owner ID"^^xsd:string ;
-    rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal,
-        sf:User .
-
 sf:pricebook2Id a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Price Book ID",
-        "Price Book ID"^^xsd:string ;
+    rdfs:label "Price Book ID"^^xsd:string,
+        "Price Book ID" ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal,
         sf:Pricebook2 .
@@ -186,11 +144,6 @@ sf:status a owl:DatatypeProperty ;
 
 sf:statusCode a owl:DatatypeProperty ;
     rdfs:label "Status Category"^^xsd:string ;
-    rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
-
-sf:systemModstamp a owl:DatatypeProperty ;
-    rdfs:label "System Modstamp" ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 

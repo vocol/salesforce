@@ -5,14 +5,6 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-sf:accountId a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Account ID",
-        "Account ID"^^xsd:string ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal,
-        sf:Account .
-
 sf:assistantName a owl:DatatypeProperty ;
     rdfs:label "Assistant's Name"^^xsd:string ;
     rdfs:domain sf:Contact ;
@@ -28,15 +20,10 @@ sf:birthdate a owl:DatatypeProperty ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
-sf:cleanStatus a owl:DatatypeProperty ;
-    rdfs:label "Clean Status"^^xsd:string ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal .
-
 sf:createdById a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Created By ID"^^xsd:string,
-        "Created By ID" ;
+    rdfs:label "Created By ID",
+        "Created By ID"^^xsd:string ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal,
         sf:User .
@@ -96,44 +83,6 @@ sf:isDeleted a owl:DatatypeProperty ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
-sf:jigsaw a owl:DatatypeProperty ;
-    rdfs:label "Data.com Key"^^xsd:string ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal .
-
-sf:jigsawContactId a owl:DatatypeProperty ;
-    rdfs:label "Jigsaw Contact ID"^^xsd:string ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal .
-
-sf:languages__c a owl:DatatypeProperty ;
-    rdfs:label "Languages"^^xsd:string ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal .
-
-sf:lastActivityDate a owl:DatatypeProperty ;
-    rdfs:label "Last Activity" ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal .
-
-sf:lastCURequestDate a owl:DatatypeProperty ;
-    rdfs:label "Last Stay-in-Touch Request Date" ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal .
-
-sf:lastCUUpdateDate a owl:DatatypeProperty ;
-    rdfs:label "Last Stay-in-Touch Save Date" ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal .
-
-sf:lastModifiedById a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Last Modified By ID"^^xsd:string,
-        "Last Modified By ID" ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal,
-        sf:User .
-
 sf:lastModifiedDate a owl:DatatypeProperty ;
     rdfs:label "Last Modified Date" ;
     rdfs:domain sf:Contact ;
@@ -146,16 +95,6 @@ sf:lastName a owl:DatatypeProperty ;
 
 sf:leadSource a owl:DatatypeProperty ;
     rdfs:label "Lead Source"^^xsd:string ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal .
-
-sf:level__c a owl:DatatypeProperty ;
-    rdfs:label "Level"^^xsd:string ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal .
-
-sf:lucid_URI__c a owl:DatatypeProperty ;
-    rdfs:label "Lucid URI"^^xsd:string ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
@@ -183,14 +122,6 @@ sf:mailingStreet a owl:DatatypeProperty ;
     rdfs:label "Mailing Street"^^xsd:string ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
-
-sf:masterRecordId a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Master Record ID",
-        "Master Record ID"^^xsd:string ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal,
-        sf:Contact .
 
 sf:mobilePhone a owl:DatatypeProperty ;
     rdfs:label "Mobile Phone"^^xsd:string ;
@@ -232,34 +163,13 @@ sf:otherStreet a owl:DatatypeProperty ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
-sf:ownerId a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Owner ID",
-        "Owner ID"^^xsd:string ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal,
-        sf:User .
-
 sf:phone a owl:DatatypeProperty ;
     rdfs:label "Business Phone"^^xsd:string ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
-sf:reportsToId a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Reports To ID",
-        "Reports To ID"^^xsd:string ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal,
-        sf:Contact .
-
 sf:salutation a owl:DatatypeProperty ;
     rdfs:label "Salutation"^^xsd:string ;
-    rdfs:domain sf:Contact ;
-    rdfs:range rdfs:Literal .
-
-sf:systemModstamp a owl:DatatypeProperty ;
-    rdfs:label "System Modstamp" ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 

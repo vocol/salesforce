@@ -5,14 +5,6 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-sf:accountId a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Account ID",
-        "Account ID"^^xsd:string ;
-    rdfs:domain sf:Opportunity ;
-    rdfs:range rdfs:Literal,
-        sf:Account .
-
 sf:amount a owl:DatatypeProperty ;
     rdfs:label "Amount" ;
     rdfs:domain sf:Opportunity ;
@@ -20,8 +12,8 @@ sf:amount a owl:DatatypeProperty ;
 
 sf:campaignId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Campaign ID"^^xsd:string,
-        "Campaign ID" ;
+    rdfs:label "Campaign ID",
+        "Campaign ID"^^xsd:string ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal,
         sf:Campaign .
@@ -41,16 +33,6 @@ sf:createdById a owl:DatatypeProperty,
 
 sf:createdDate a owl:DatatypeProperty ;
     rdfs:label "Created Date" ;
-    rdfs:domain sf:Opportunity ;
-    rdfs:range rdfs:Literal .
-
-sf:currentGenerators__c a owl:DatatypeProperty ;
-    rdfs:label "Current Generator(s)"^^xsd:string ;
-    rdfs:domain sf:Opportunity ;
-    rdfs:range rdfs:Literal .
-
-sf:deliveryInstallationStatus__c a owl:DatatypeProperty ;
-    rdfs:label "Delivery/Installation Status"^^xsd:string ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
@@ -119,19 +101,6 @@ sf:isWon a owl:DatatypeProperty ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
-sf:lastActivityDate a owl:DatatypeProperty ;
-    rdfs:label "Last Activity" ;
-    rdfs:domain sf:Opportunity ;
-    rdfs:range rdfs:Literal .
-
-sf:lastModifiedById a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Last Modified By ID",
-        "Last Modified By ID"^^xsd:string ;
-    rdfs:domain sf:Opportunity ;
-    rdfs:range rdfs:Literal,
-        sf:User .
-
 sf:lastModifiedDate a owl:DatatypeProperty ;
     rdfs:label "Last Modified Date" ;
     rdfs:domain sf:Opportunity ;
@@ -139,11 +108,6 @@ sf:lastModifiedDate a owl:DatatypeProperty ;
 
 sf:leadSource a owl:DatatypeProperty ;
     rdfs:label "Lead Source"^^xsd:string ;
-    rdfs:domain sf:Opportunity ;
-    rdfs:range rdfs:Literal .
-
-sf:mainCompetitors__c a owl:DatatypeProperty ;
-    rdfs:label "Main Competitor(s)"^^xsd:string ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
@@ -156,19 +120,6 @@ sf:nextStep a owl:DatatypeProperty ;
     rdfs:label "Next Step"^^xsd:string ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
-
-sf:orderNumber__c a owl:DatatypeProperty ;
-    rdfs:label "Order Number"^^xsd:string ;
-    rdfs:domain sf:Opportunity ;
-    rdfs:range rdfs:Literal .
-
-sf:ownerId a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Owner ID",
-        "Owner ID"^^xsd:string ;
-    rdfs:domain sf:Opportunity ;
-    rdfs:range rdfs:Literal,
-        sf:User .
 
 sf:pricebook2Id a owl:DatatypeProperty,
         owl:ObjectProperty ;
@@ -188,18 +139,8 @@ sf:stageName a owl:DatatypeProperty ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
-sf:systemModstamp a owl:DatatypeProperty ;
-    rdfs:label "System Modstamp" ;
-    rdfs:domain sf:Opportunity ;
-    rdfs:range rdfs:Literal .
-
 sf:totalOpportunityQuantity a owl:DatatypeProperty ;
     rdfs:label "Quantity" ;
-    rdfs:domain sf:Opportunity ;
-    rdfs:range rdfs:Literal .
-
-sf:trackingNumber__c a owl:DatatypeProperty ;
-    rdfs:label "Tracking Number"^^xsd:string ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
