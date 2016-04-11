@@ -26,7 +26,7 @@ sf:assistantPhone a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 sf:billToContactId a owl:ObjectProperty ;
-    rdfs:label "Bill To Contact ID" ;
+    rdfs:label "Bill To Contact ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range sf:Contact .
 
@@ -66,7 +66,7 @@ sf:birthdate a owl:DatatypeProperty ;
     rdfs:range xsd:date .
 
 sf:campaignId a owl:ObjectProperty ;
-    rdfs:label "Campaign ID" ;
+    rdfs:label "Campaign ID"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range sf:Campaign .
 
@@ -86,7 +86,7 @@ sf:company a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 sf:companyAuthorizedById a owl:ObjectProperty ;
-    rdfs:label "Company Authorized By ID" ;
+    rdfs:label "Company Authorized By ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range sf:User .
 
@@ -106,12 +106,12 @@ sf:companySignedDate a owl:DatatypeProperty ;
     rdfs:range xsd:date .
 
 sf:companySignedId a owl:ObjectProperty ;
-    rdfs:label "Company Signed By ID" ;
+    rdfs:label "Company Signed By ID"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range sf:User .
 
 sf:contractId a owl:ObjectProperty ;
-    rdfs:label "Contract ID" ;
+    rdfs:label "Contract ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range sf:Contract .
 
@@ -126,12 +126,12 @@ sf:contractTerm a owl:DatatypeProperty ;
     rdfs:range xsd:integer .
 
 sf:convertedAccountId a owl:ObjectProperty ;
-    rdfs:label "Converted Account ID" ;
+    rdfs:label "Converted Account ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range sf:Account .
 
 sf:convertedContactId a owl:ObjectProperty ;
-    rdfs:label "Converted Contact ID" ;
+    rdfs:label "Converted Contact ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range sf:Contact .
 
@@ -141,7 +141,7 @@ sf:convertedDate a owl:DatatypeProperty ;
     rdfs:range xsd:date .
 
 sf:convertedOpportunityId a owl:ObjectProperty ;
-    rdfs:label "Converted Opportunity ID" ;
+    rdfs:label "Converted Opportunity ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range sf:Opportunity .
 
@@ -161,7 +161,7 @@ sf:createdDate a owl:DatatypeProperty ;
     rdfs:range xsd:dateTime .
 
 sf:customerAuthorizedById a owl:ObjectProperty ;
-    rdfs:label "Customer Authorized By ID" ;
+    rdfs:label "Customer Authorized By ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range sf:Contact .
 
@@ -176,7 +176,7 @@ sf:customerSignedDate a owl:DatatypeProperty ;
     rdfs:range xsd:date .
 
 sf:customerSignedId a owl:ObjectProperty ;
-    rdfs:label "Customer Signed By ID" ;
+    rdfs:label "Customer Signed By ID"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range sf:Contact .
 
@@ -186,7 +186,7 @@ sf:customerSignedTitle a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 sf:dandbCompanyId a owl:ObjectProperty ;
-    rdfs:label "D&B Company ID" ;
+    rdfs:label "D&B Company ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range sf:DandBCompany .
 
@@ -510,7 +510,7 @@ sf:postalCode a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 sf:pricebook2Id a owl:ObjectProperty ;
-    rdfs:label "Price Book ID" ;
+    rdfs:label "Price Book ID"@en ;
     rdfs:domain sf:Contract,
         sf:Opportunity ;
     rdfs:range sf:Pricebook2 .
@@ -537,7 +537,7 @@ sf:salutation a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 sf:shipToContactId a owl:ObjectProperty ;
-    rdfs:label "Ship To Contact ID" ;
+    rdfs:label "Ship To Contact ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range sf:Contact .
 

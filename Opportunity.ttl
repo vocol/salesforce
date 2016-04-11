@@ -11,7 +11,7 @@ sf:amount a owl:DatatypeProperty ;
     rdfs:range xsd:double .
 
 sf:campaignId a owl:ObjectProperty ;
-    rdfs:label "Campaign ID" ;
+    rdfs:label "Campaign ID"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range sf:Campaign .
 
@@ -111,7 +111,7 @@ sf:nextStep a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 sf:pricebook2Id a owl:ObjectProperty ;
-    rdfs:label "Price Book ID" ;
+    rdfs:label "Price Book ID"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range sf:Pricebook2 .
 

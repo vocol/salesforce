@@ -26,12 +26,12 @@ sf:companyDunsNumber a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 sf:convertedAccountId a owl:ObjectProperty ;
-    rdfs:label "Converted Account ID" ;
+    rdfs:label "Converted Account ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range sf:Account .
 
 sf:convertedContactId a owl:ObjectProperty ;
-    rdfs:label "Converted Contact ID" ;
+    rdfs:label "Converted Contact ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range sf:Contact .
 
@@ -41,7 +41,7 @@ sf:convertedDate a owl:DatatypeProperty ;
     rdfs:range xsd:date .
 
 sf:convertedOpportunityId a owl:ObjectProperty ;
-    rdfs:label "Converted Opportunity ID" ;
+    rdfs:label "Converted Opportunity ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range sf:Opportunity .
 
@@ -56,7 +56,7 @@ sf:createdDate a owl:DatatypeProperty ;
     rdfs:range xsd:dateTime .
 
 sf:dandbCompanyId a owl:ObjectProperty ;
-    rdfs:label "D&B Company ID" ;
+    rdfs:label "D&B Company ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range sf:DandBCompany .
 

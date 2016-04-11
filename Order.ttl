@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 sf:billToContactId a owl:ObjectProperty ;
-    rdfs:label "Bill To Contact ID" ;
+    rdfs:label "Bill To Contact ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range sf:Contact .
 
@@ -36,7 +36,7 @@ sf:billingStreet a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 sf:companyAuthorizedById a owl:ObjectProperty ;
-    rdfs:label "Company Authorized By ID" ;
+    rdfs:label "Company Authorized By ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range sf:User .
 
@@ -46,7 +46,7 @@ sf:companyAuthorizedDate a owl:DatatypeProperty ;
     rdfs:range xsd:date .
 
 sf:contractId a owl:ObjectProperty ;
-    rdfs:label "Contract ID" ;
+    rdfs:label "Contract ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range sf:Contract .
 
@@ -56,7 +56,7 @@ sf:createdDate a owl:DatatypeProperty ;
     rdfs:range xsd:dateTime .
 
 sf:customerAuthorizedById a owl:ObjectProperty ;
-    rdfs:label "Customer Authorized By ID" ;
+    rdfs:label "Customer Authorized By ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range sf:Contact .
 
@@ -126,7 +126,7 @@ sf:poNumber a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 sf:shipToContactId a owl:ObjectProperty ;
-    rdfs:label "Ship To Contact ID" ;
+    rdfs:label "Ship To Contact ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range sf:Contact .
 
