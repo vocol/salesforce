@@ -8,144 +8,127 @@
 sf:billingCity a owl:DatatypeProperty ;
     rdfs:label "Billing City"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:billingCountry a owl:DatatypeProperty ;
     rdfs:label "Billing Country"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:billingPostalCode a owl:DatatypeProperty ;
     rdfs:label "Billing Zip/Postal Code"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:billingState a owl:DatatypeProperty ;
     rdfs:label "Billing State/Province"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:billingStreet a owl:DatatypeProperty ;
     rdfs:label "Billing Street"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:companySignedDate a owl:DatatypeProperty ;
-    rdfs:label "Company Signed Date" ;
+    rdfs:label "Company Signed Date"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:date .
 
-sf:companySignedId a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Company Signed By ID",
-        "Company Signed By ID"@en ;
+sf:companySignedId a owl:ObjectProperty ;
+    rdfs:label "Company Signed By ID" ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal,
-        sf:User .
+    rdfs:range sf:User .
 
 sf:contractNumber a owl:DatatypeProperty ;
     rdfs:label "Contract Number"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:contractTerm a owl:DatatypeProperty ;
-    rdfs:label "Contract Term" ;
+    rdfs:label "Contract Term"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
-
-sf:createdById a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Created By ID",
-        "Created By ID"@en ;
-    rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal,
-        sf:User .
+    rdfs:range xsd:integer .
 
 sf:createdDate a owl:DatatypeProperty ;
-    rdfs:label "Created Date" ;
+    rdfs:label "Created Date"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:dateTime .
 
 sf:customerSignedDate a owl:DatatypeProperty ;
-    rdfs:label "Customer Signed Date" ;
+    rdfs:label "Customer Signed Date"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:date .
 
-sf:customerSignedId a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Customer Signed By ID",
-        "Customer Signed By ID"@en ;
+sf:customerSignedId a owl:ObjectProperty ;
+    rdfs:label "Customer Signed By ID" ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal,
-        sf:Contact .
+    rdfs:range sf:Contact .
 
 sf:customerSignedTitle a owl:DatatypeProperty ;
     rdfs:label "Customer Signed Title"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:description a owl:DatatypeProperty ;
     rdfs:label "Description"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:endDate a owl:DatatypeProperty ;
-    rdfs:label "Contract End Date" ;
+    rdfs:label "Contract End Date"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:date .
 
 sf:id a owl:DatatypeProperty ;
     rdfs:label "Contract ID"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:isDeleted a owl:DatatypeProperty ;
-    rdfs:label "Deleted" ;
+    rdfs:label "Deleted"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:boolean .
 
 sf:lastApprovedDate a owl:DatatypeProperty ;
-    rdfs:label "Last Approved Date" ;
+    rdfs:label "Last Approved Date"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:dateTime .
 
 sf:lastModifiedDate a owl:DatatypeProperty ;
-    rdfs:label "Last Modified Date" ;
+    rdfs:label "Last Modified Date"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:dateTime .
 
 sf:ownerExpirationNotice a owl:DatatypeProperty ;
     rdfs:label "Owner Expiration Notice"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
-sf:pricebook2Id a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Price Book ID",
-        "Price Book ID"@en ;
+sf:pricebook2Id a owl:ObjectProperty ;
+    rdfs:label "Price Book ID" ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal,
-        sf:Pricebook2 .
+    rdfs:range sf:Pricebook2 .
 
 sf:specialTerms a owl:DatatypeProperty ;
     rdfs:label "Special Terms"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:startDate a owl:DatatypeProperty ;
-    rdfs:label "Contract Start Date" ;
+    rdfs:label "Contract Start Date"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:date .
 
 sf:status a owl:DatatypeProperty ;
     rdfs:label "Status"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:statusCode a owl:DatatypeProperty ;
     rdfs:label "Status Category"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:Contract a owl:Class ;
     rdfs:label "Contract" .

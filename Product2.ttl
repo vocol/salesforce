@@ -5,58 +5,50 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-sf:createdById a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Created By ID",
-        "Created By ID"@en ;
-    rdfs:domain sf:Product2 ;
-    rdfs:range rdfs:Literal,
-        sf:User .
-
 sf:createdDate a owl:DatatypeProperty ;
-    rdfs:label "Created Date" ;
+    rdfs:label "Created Date"@en ;
     rdfs:domain sf:Product2 ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:dateTime .
 
 sf:description a owl:DatatypeProperty ;
     rdfs:label "Product Description"@en ;
     rdfs:domain sf:Product2 ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:family a owl:DatatypeProperty ;
     rdfs:label "Product Family"@en ;
     rdfs:domain sf:Product2 ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:id a owl:DatatypeProperty ;
     rdfs:label "Product ID"@en ;
     rdfs:domain sf:Product2 ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:isActive a owl:DatatypeProperty ;
-    rdfs:label "Active" ;
+    rdfs:label "Active"@en ;
     rdfs:domain sf:Product2 ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:boolean .
 
 sf:isDeleted a owl:DatatypeProperty ;
-    rdfs:label "Deleted" ;
+    rdfs:label "Deleted"@en ;
     rdfs:domain sf:Product2 ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:boolean .
 
 sf:lastModifiedDate a owl:DatatypeProperty ;
-    rdfs:label "Last Modified Date" ;
+    rdfs:label "Last Modified Date"@en ;
     rdfs:domain sf:Product2 ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:dateTime .
 
 sf:name a owl:DatatypeProperty ;
     rdfs:label "Product Name"@en ;
     rdfs:domain sf:Product2 ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:productCode a owl:DatatypeProperty ;
     rdfs:label "Product Code"@en ;
     rdfs:domain sf:Product2 ;
-    rdfs:range rdfs:Literal .
+    rdfs:range xsd:string .
 
 sf:Product2 a owl:Class ;
     rdfs:label "Product2" .
