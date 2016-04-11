@@ -11,32 +11,32 @@ sf:annualRevenue a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:city a owl:DatatypeProperty ;
-    rdfs:label "City"^^xsd:string ;
+    rdfs:label "City"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:company a owl:DatatypeProperty ;
-    rdfs:label "Company"^^xsd:string ;
+    rdfs:label "Company"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:companyDunsNumber a owl:DatatypeProperty ;
-    rdfs:label "Company D-U-N-S Number"^^xsd:string ;
+    rdfs:label "Company D-U-N-S Number"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:convertedAccountId a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "Converted Account ID",
-        "Converted Account ID"^^xsd:string ;
+        "Converted Account ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:Account .
 
 sf:convertedContactId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Converted Contact ID"^^xsd:string,
-        "Converted Contact ID" ;
+    rdfs:label "Converted Contact ID",
+        "Converted Contact ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:Contact .
@@ -49,20 +49,20 @@ sf:convertedDate a owl:DatatypeProperty ;
 sf:convertedOpportunityId a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "Converted Opportunity ID",
-        "Converted Opportunity ID"^^xsd:string ;
+        "Converted Opportunity ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:Opportunity .
 
 sf:country a owl:DatatypeProperty ;
-    rdfs:label "Country"^^xsd:string ;
+    rdfs:label "Country"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:createdById a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Created By ID"^^xsd:string,
-        "Created By ID" ;
+    rdfs:label "Created By ID",
+        "Created By ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:User .
@@ -74,19 +74,19 @@ sf:createdDate a owl:DatatypeProperty ;
 
 sf:dandbCompanyId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "D&B Company ID"^^xsd:string,
-        "D&B Company ID" ;
+    rdfs:label "D&B Company ID",
+        "D&B Company ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:DandBCompany .
 
 sf:description a owl:DatatypeProperty ;
-    rdfs:label "Description"^^xsd:string ;
+    rdfs:label "Description"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:email a owl:DatatypeProperty ;
-    rdfs:label "Email"^^xsd:string ;
+    rdfs:label "Email"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
@@ -96,27 +96,27 @@ sf:emailBouncedDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:emailBouncedReason a owl:DatatypeProperty ;
-    rdfs:label "Email Bounced Reason"^^xsd:string ;
+    rdfs:label "Email Bounced Reason"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:fax a owl:DatatypeProperty ;
-    rdfs:label "Fax"^^xsd:string ;
+    rdfs:label "Fax"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:firstName a owl:DatatypeProperty ;
-    rdfs:label "First Name"^^xsd:string ;
+    rdfs:label "First Name"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:id a owl:DatatypeProperty ;
-    rdfs:label "Lead ID"^^xsd:string ;
+    rdfs:label "Lead ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:industry a owl:DatatypeProperty ;
-    rdfs:label "Industry"^^xsd:string ;
+    rdfs:label "Industry"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
@@ -141,22 +141,22 @@ sf:lastModifiedDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:lastName a owl:DatatypeProperty ;
-    rdfs:label "Last Name"^^xsd:string ;
+    rdfs:label "Last Name"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:leadSource a owl:DatatypeProperty ;
-    rdfs:label "Lead Source"^^xsd:string ;
+    rdfs:label "Lead Source"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:mobilePhone a owl:DatatypeProperty ;
-    rdfs:label "Mobile Phone"^^xsd:string ;
+    rdfs:label "Mobile Phone"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:name a owl:DatatypeProperty ;
-    rdfs:label "Full Name"^^xsd:string ;
+    rdfs:label "Full Name"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
@@ -166,47 +166,47 @@ sf:numberOfEmployees a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:phone a owl:DatatypeProperty ;
-    rdfs:label "Phone"^^xsd:string ;
+    rdfs:label "Phone"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:postalCode a owl:DatatypeProperty ;
-    rdfs:label "Zip/Postal Code"^^xsd:string ;
+    rdfs:label "Zip/Postal Code"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:rating a owl:DatatypeProperty ;
-    rdfs:label "Rating"^^xsd:string ;
+    rdfs:label "Rating"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:salutation a owl:DatatypeProperty ;
-    rdfs:label "Salutation"^^xsd:string ;
+    rdfs:label "Salutation"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:state a owl:DatatypeProperty ;
-    rdfs:label "State/Province"^^xsd:string ;
+    rdfs:label "State/Province"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:status a owl:DatatypeProperty ;
-    rdfs:label "Status"^^xsd:string ;
+    rdfs:label "Status"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:street a owl:DatatypeProperty ;
-    rdfs:label "Street"^^xsd:string ;
+    rdfs:label "Street"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:title a owl:DatatypeProperty ;
-    rdfs:label "Title"^^xsd:string ;
+    rdfs:label "Title"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:website a owl:DatatypeProperty ;
-    rdfs:label "Website"^^xsd:string ;
+    rdfs:label "Website"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 

@@ -13,7 +13,7 @@ sf:amount a owl:DatatypeProperty ;
 sf:campaignId a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "Campaign ID",
-        "Campaign ID"^^xsd:string ;
+        "Campaign ID"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal,
         sf:Campaign .
@@ -26,7 +26,7 @@ sf:closeDate a owl:DatatypeProperty ;
 sf:createdById a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "Created By ID",
-        "Created By ID"^^xsd:string ;
+        "Created By ID"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal,
         sf:User .
@@ -37,7 +37,7 @@ sf:createdDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:description a owl:DatatypeProperty ;
-    rdfs:label "Description"^^xsd:string ;
+    rdfs:label "Description"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
@@ -47,7 +47,7 @@ sf:expectedRevenue a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:fiscal a owl:DatatypeProperty ;
-    rdfs:label "Fiscal Period"^^xsd:string ;
+    rdfs:label "Fiscal Period"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
@@ -62,12 +62,12 @@ sf:fiscalYear a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:forecastCategory a owl:DatatypeProperty ;
-    rdfs:label "Forecast Category"^^xsd:string ;
+    rdfs:label "Forecast Category"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
 sf:forecastCategoryName a owl:DatatypeProperty ;
-    rdfs:label "Forecast Category"^^xsd:string ;
+    rdfs:label "Forecast Category"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
@@ -77,7 +77,7 @@ sf:hasOpportunityLineItem a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:id a owl:DatatypeProperty ;
-    rdfs:label "Opportunity ID"^^xsd:string ;
+    rdfs:label "Opportunity ID"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
@@ -107,24 +107,24 @@ sf:lastModifiedDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:leadSource a owl:DatatypeProperty ;
-    rdfs:label "Lead Source"^^xsd:string ;
+    rdfs:label "Lead Source"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
 sf:name a owl:DatatypeProperty ;
-    rdfs:label "Name"^^xsd:string ;
+    rdfs:label "Name"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
 sf:nextStep a owl:DatatypeProperty ;
-    rdfs:label "Next Step"^^xsd:string ;
+    rdfs:label "Next Step"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
 sf:pricebook2Id a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "Price Book ID",
-        "Price Book ID"^^xsd:string ;
+        "Price Book ID"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal,
         sf:Pricebook2 .
@@ -135,7 +135,7 @@ sf:probability a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:stageName a owl:DatatypeProperty ;
-    rdfs:label "Stage"^^xsd:string ;
+    rdfs:label "Stage"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
@@ -145,7 +145,7 @@ sf:totalOpportunityQuantity a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:type a owl:DatatypeProperty ;
-    rdfs:label "Opportunity Type"^^xsd:string ;
+    rdfs:label "Opportunity Type"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 

@@ -6,27 +6,27 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 sf:billingCity a owl:DatatypeProperty ;
-    rdfs:label "Billing City"^^xsd:string ;
+    rdfs:label "Billing City"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
 sf:billingCountry a owl:DatatypeProperty ;
-    rdfs:label "Billing Country"^^xsd:string ;
+    rdfs:label "Billing Country"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
 sf:billingPostalCode a owl:DatatypeProperty ;
-    rdfs:label "Billing Zip/Postal Code"^^xsd:string ;
+    rdfs:label "Billing Zip/Postal Code"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
 sf:billingState a owl:DatatypeProperty ;
-    rdfs:label "Billing State/Province"^^xsd:string ;
+    rdfs:label "Billing State/Province"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
 sf:billingStreet a owl:DatatypeProperty ;
-    rdfs:label "Billing Street"^^xsd:string ;
+    rdfs:label "Billing Street"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
@@ -37,14 +37,14 @@ sf:companySignedDate a owl:DatatypeProperty ;
 
 sf:companySignedId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Company Signed By ID"^^xsd:string,
-        "Company Signed By ID" ;
+    rdfs:label "Company Signed By ID",
+        "Company Signed By ID"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal,
         sf:User .
 
 sf:contractNumber a owl:DatatypeProperty ;
-    rdfs:label "Contract Number"^^xsd:string ;
+    rdfs:label "Contract Number"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
@@ -56,7 +56,7 @@ sf:contractTerm a owl:DatatypeProperty ;
 sf:createdById a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "Created By ID",
-        "Created By ID"^^xsd:string ;
+        "Created By ID"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal,
         sf:User .
@@ -73,19 +73,19 @@ sf:customerSignedDate a owl:DatatypeProperty ;
 
 sf:customerSignedId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Customer Signed By ID"^^xsd:string,
-        "Customer Signed By ID" ;
+    rdfs:label "Customer Signed By ID",
+        "Customer Signed By ID"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal,
         sf:Contact .
 
 sf:customerSignedTitle a owl:DatatypeProperty ;
-    rdfs:label "Customer Signed Title"^^xsd:string ;
+    rdfs:label "Customer Signed Title"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
 sf:description a owl:DatatypeProperty ;
-    rdfs:label "Description"^^xsd:string ;
+    rdfs:label "Description"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
@@ -95,7 +95,7 @@ sf:endDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:id a owl:DatatypeProperty ;
-    rdfs:label "Contract ID"^^xsd:string ;
+    rdfs:label "Contract ID"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
@@ -115,20 +115,20 @@ sf:lastModifiedDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:ownerExpirationNotice a owl:DatatypeProperty ;
-    rdfs:label "Owner Expiration Notice"^^xsd:string ;
+    rdfs:label "Owner Expiration Notice"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
 sf:pricebook2Id a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Price Book ID"^^xsd:string,
-        "Price Book ID" ;
+    rdfs:label "Price Book ID",
+        "Price Book ID"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal,
         sf:Pricebook2 .
 
 sf:specialTerms a owl:DatatypeProperty ;
-    rdfs:label "Special Terms"^^xsd:string ;
+    rdfs:label "Special Terms"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
@@ -138,12 +138,12 @@ sf:startDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:status a owl:DatatypeProperty ;
-    rdfs:label "Status"^^xsd:string ;
+    rdfs:label "Status"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
 sf:statusCode a owl:DatatypeProperty ;
-    rdfs:label "Status Category"^^xsd:string ;
+    rdfs:label "Status Category"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 

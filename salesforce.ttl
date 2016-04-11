@@ -49,49 +49,49 @@ sf:annualRevenue a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:assistantName a owl:DatatypeProperty ;
-    rdfs:label "Assistant's Name"^^xsd:string ;
+    rdfs:label "Assistant's Name"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:assistantPhone a owl:DatatypeProperty ;
-    rdfs:label "Asst. Phone"^^xsd:string ;
+    rdfs:label "Asst. Phone"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:billToContactId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Bill To Contact ID"^^xsd:string,
-        "Bill To Contact ID" ;
+    rdfs:label "Bill To Contact ID",
+        "Bill To Contact ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal,
         sf:Contact .
 
 sf:billingCity a owl:DatatypeProperty ;
-    rdfs:label "Billing City"^^xsd:string ;
+    rdfs:label "Billing City"@en ;
     rdfs:domain sf:Contract,
         sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:billingCountry a owl:DatatypeProperty ;
-    rdfs:label "Billing Country"^^xsd:string ;
+    rdfs:label "Billing Country"@en ;
     rdfs:domain sf:Contract,
         sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:billingPostalCode a owl:DatatypeProperty ;
-    rdfs:label "Billing Zip/Postal Code"^^xsd:string ;
+    rdfs:label "Billing Zip/Postal Code"@en ;
     rdfs:domain sf:Contract,
         sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:billingState a owl:DatatypeProperty ;
-    rdfs:label "Billing State/Province"^^xsd:string ;
+    rdfs:label "Billing State/Province"@en ;
     rdfs:domain sf:Contract,
         sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:billingStreet a owl:DatatypeProperty ;
-    rdfs:label "Billing Street"^^xsd:string ;
+    rdfs:label "Billing Street"@en ;
     rdfs:domain sf:Contract,
         sf:Order ;
     rdfs:range rdfs:Literal .
@@ -103,14 +103,14 @@ sf:birthdate a owl:DatatypeProperty ;
 
 sf:campaignId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Campaign ID"^^xsd:string,
-        "Campaign ID" ;
+    rdfs:label "Campaign ID",
+        "Campaign ID"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal,
         sf:Campaign .
 
 sf:city a owl:DatatypeProperty ;
-    rdfs:label "City"^^xsd:string ;
+    rdfs:label "City"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
@@ -120,14 +120,14 @@ sf:closeDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:company a owl:DatatypeProperty ;
-    rdfs:label "Company"^^xsd:string ;
+    rdfs:label "Company"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:companyAuthorizedById a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "Company Authorized By ID",
-        "Company Authorized By ID"^^xsd:string ;
+        "Company Authorized By ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal,
         sf:User .
@@ -138,7 +138,7 @@ sf:companyAuthorizedDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:companyDunsNumber a owl:DatatypeProperty ;
-    rdfs:label "Company D-U-N-S Number"^^xsd:string ;
+    rdfs:label "Company D-U-N-S Number"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
@@ -150,7 +150,7 @@ sf:companySignedDate a owl:DatatypeProperty ;
 sf:companySignedId a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "Company Signed By ID",
-        "Company Signed By ID"^^xsd:string ;
+        "Company Signed By ID"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal,
         sf:User .
@@ -158,13 +158,13 @@ sf:companySignedId a owl:DatatypeProperty,
 sf:contractId a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "Contract ID",
-        "Contract ID"^^xsd:string ;
+        "Contract ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal,
         sf:Contract .
 
 sf:contractNumber a owl:DatatypeProperty ;
-    rdfs:label "Contract Number"^^xsd:string ;
+    rdfs:label "Contract Number"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
@@ -175,16 +175,16 @@ sf:contractTerm a owl:DatatypeProperty ;
 
 sf:convertedAccountId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Converted Account ID"^^xsd:string,
-        "Converted Account ID" ;
+    rdfs:label "Converted Account ID",
+        "Converted Account ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:Account .
 
 sf:convertedContactId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Converted Contact ID"^^xsd:string,
-        "Converted Contact ID" ;
+    rdfs:label "Converted Contact ID",
+        "Converted Contact ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:Contact .
@@ -196,21 +196,21 @@ sf:convertedDate a owl:DatatypeProperty ;
 
 sf:convertedOpportunityId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Converted Opportunity ID"^^xsd:string,
-        "Converted Opportunity ID" ;
+    rdfs:label "Converted Opportunity ID",
+        "Converted Opportunity ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:Opportunity .
 
 sf:country a owl:DatatypeProperty ;
-    rdfs:label "Country"^^xsd:string ;
+    rdfs:label "Country"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:createdById a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Created By ID"^^xsd:string,
-        "Created By ID" ;
+    rdfs:label "Created By ID",
+        "Created By ID"@en ;
     rdfs:domain sf:Contact,
         sf:Contract,
         sf:Lead,
@@ -232,8 +232,8 @@ sf:createdDate a owl:DatatypeProperty ;
 
 sf:customerAuthorizedById a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Customer Authorized By ID"^^xsd:string,
-        "Customer Authorized By ID" ;
+    rdfs:label "Customer Authorized By ID",
+        "Customer Authorized By ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal,
         sf:Contact .
@@ -250,35 +250,35 @@ sf:customerSignedDate a owl:DatatypeProperty ;
 
 sf:customerSignedId a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Customer Signed By ID"^^xsd:string,
-        "Customer Signed By ID" ;
+    rdfs:label "Customer Signed By ID",
+        "Customer Signed By ID"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal,
         sf:Contact .
 
 sf:customerSignedTitle a owl:DatatypeProperty ;
-    rdfs:label "Customer Signed Title"^^xsd:string ;
+    rdfs:label "Customer Signed Title"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
 sf:dandbCompanyId a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "D&B Company ID",
-        "D&B Company ID"^^xsd:string ;
+        "D&B Company ID"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal,
         sf:DandBCompany .
 
 sf:department a owl:DatatypeProperty ;
-    rdfs:label "Department"^^xsd:string ;
+    rdfs:label "Department"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:description a owl:DatatypeProperty ;
-    rdfs:label "Contact Description"^^xsd:string,
-        "Description"^^xsd:string,
-        "Internal Comments"^^xsd:string,
-        "Product Description"^^xsd:string ;
+    rdfs:label "Contact Description"@en,
+        "Description"@en,
+        "Internal Comments"@en,
+        "Product Description"@en ;
     rdfs:domain sf:Contact,
         sf:Contract,
         sf:Lead,
@@ -293,7 +293,7 @@ sf:effectiveDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:email a owl:DatatypeProperty ;
-    rdfs:label "Email"^^xsd:string ;
+    rdfs:label "Email"@en ;
     rdfs:domain sf:Contact,
         sf:Lead ;
     rdfs:range rdfs:Literal .
@@ -305,7 +305,7 @@ sf:emailBouncedDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:emailBouncedReason a owl:DatatypeProperty ;
-    rdfs:label "Email Bounced Reason"^^xsd:string ;
+    rdfs:label "Email Bounced Reason"@en ;
     rdfs:domain sf:Contact,
         sf:Lead ;
     rdfs:range rdfs:Literal .
@@ -323,25 +323,25 @@ sf:expectedRevenue a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:family a owl:DatatypeProperty ;
-    rdfs:label "Product Family"^^xsd:string ;
+    rdfs:label "Product Family"@en ;
     rdfs:domain sf:Product2 ;
     rdfs:range rdfs:Literal .
 
 sf:fax a owl:DatatypeProperty ;
-    rdfs:label "Business Fax"^^xsd:string,
-        "Fax"^^xsd:string ;
+    rdfs:label "Business Fax"@en,
+        "Fax"@en ;
     rdfs:domain sf:Contact,
         sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:firstName a owl:DatatypeProperty ;
-    rdfs:label "First Name"^^xsd:string ;
+    rdfs:label "First Name"@en ;
     rdfs:domain sf:Contact,
         sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:fiscal a owl:DatatypeProperty ;
-    rdfs:label "Fiscal Period"^^xsd:string ;
+    rdfs:label "Fiscal Period"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
@@ -356,12 +356,12 @@ sf:fiscalYear a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:forecastCategory a owl:DatatypeProperty ;
-    rdfs:label "Forecast Category"^^xsd:string ;
+    rdfs:label "Forecast Category"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
 sf:forecastCategoryName a owl:DatatypeProperty ;
-    rdfs:label "Forecast Category"^^xsd:string ;
+    rdfs:label "Forecast Category"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
@@ -371,17 +371,17 @@ sf:hasOpportunityLineItem a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:homePhone a owl:DatatypeProperty ;
-    rdfs:label "Home Phone"^^xsd:string ;
+    rdfs:label "Home Phone"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:id a owl:DatatypeProperty ;
-    rdfs:label "Contact ID"^^xsd:string,
-        "Contract ID"^^xsd:string,
-        "Lead ID"^^xsd:string,
-        "Opportunity ID"^^xsd:string,
-        "Order ID"^^xsd:string,
-        "Product ID"^^xsd:string ;
+    rdfs:label "Contact ID"@en,
+        "Contract ID"@en,
+        "Lead ID"@en,
+        "Opportunity ID"@en,
+        "Order ID"@en,
+        "Product ID"@en ;
     rdfs:domain sf:Contact,
         sf:Contract,
         sf:Lead,
@@ -391,7 +391,7 @@ sf:id a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:industry a owl:DatatypeProperty ;
-    rdfs:label "Industry"^^xsd:string ;
+    rdfs:label "Industry"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
@@ -456,54 +456,54 @@ sf:lastModifiedDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:lastName a owl:DatatypeProperty ;
-    rdfs:label "Last Name"^^xsd:string ;
+    rdfs:label "Last Name"@en ;
     rdfs:domain sf:Contact,
         sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:leadSource a owl:DatatypeProperty ;
-    rdfs:label "Lead Source"^^xsd:string ;
+    rdfs:label "Lead Source"@en ;
     rdfs:domain sf:Contact,
         sf:Lead,
         sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
 sf:mailingCity a owl:DatatypeProperty ;
-    rdfs:label "Mailing City"^^xsd:string ;
+    rdfs:label "Mailing City"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:mailingCountry a owl:DatatypeProperty ;
-    rdfs:label "Mailing Country"^^xsd:string ;
+    rdfs:label "Mailing Country"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:mailingPostalCode a owl:DatatypeProperty ;
-    rdfs:label "Mailing Zip/Postal Code"^^xsd:string ;
+    rdfs:label "Mailing Zip/Postal Code"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:mailingState a owl:DatatypeProperty ;
-    rdfs:label "Mailing State/Province"^^xsd:string ;
+    rdfs:label "Mailing State/Province"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:mailingStreet a owl:DatatypeProperty ;
-    rdfs:label "Mailing Street"^^xsd:string ;
+    rdfs:label "Mailing Street"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:mobilePhone a owl:DatatypeProperty ;
-    rdfs:label "Mobile Phone"^^xsd:string ;
+    rdfs:label "Mobile Phone"@en ;
     rdfs:domain sf:Contact,
         sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:name a owl:DatatypeProperty ;
-    rdfs:label "Full Name"^^xsd:string,
-        "Name"^^xsd:string,
-        "Order Name"^^xsd:string,
-        "Product Name"^^xsd:string ;
+    rdfs:label "Full Name"@en,
+        "Name"@en,
+        "Order Name"@en,
+        "Product Name"@en ;
     rdfs:domain sf:Contact,
         sf:Lead,
         sf:Opportunity,
@@ -512,7 +512,7 @@ sf:name a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:nextStep a owl:DatatypeProperty ;
-    rdfs:label "Next Step"^^xsd:string ;
+    rdfs:label "Next Step"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
@@ -522,53 +522,53 @@ sf:numberOfEmployees a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:orderNumber a owl:DatatypeProperty ;
-    rdfs:label "Order Number"^^xsd:string ;
+    rdfs:label "Order Number"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:orderReferenceNumber a owl:DatatypeProperty ;
-    rdfs:label "Order Reference Number"^^xsd:string ;
+    rdfs:label "Order Reference Number"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:otherCity a owl:DatatypeProperty ;
-    rdfs:label "Other City"^^xsd:string ;
+    rdfs:label "Other City"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:otherCountry a owl:DatatypeProperty ;
-    rdfs:label "Other Country"^^xsd:string ;
+    rdfs:label "Other Country"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:otherPhone a owl:DatatypeProperty ;
-    rdfs:label "Other Phone"^^xsd:string ;
+    rdfs:label "Other Phone"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:otherPostalCode a owl:DatatypeProperty ;
-    rdfs:label "Other Zip/Postal Code"^^xsd:string ;
+    rdfs:label "Other Zip/Postal Code"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:otherState a owl:DatatypeProperty ;
-    rdfs:label "Other State/Province"^^xsd:string ;
+    rdfs:label "Other State/Province"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:otherStreet a owl:DatatypeProperty ;
-    rdfs:label "Other Street"^^xsd:string ;
+    rdfs:label "Other Street"@en ;
     rdfs:domain sf:Contact ;
     rdfs:range rdfs:Literal .
 
 sf:ownerExpirationNotice a owl:DatatypeProperty ;
-    rdfs:label "Owner Expiration Notice"^^xsd:string ;
+    rdfs:label "Owner Expiration Notice"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
 sf:phone a owl:DatatypeProperty ;
-    rdfs:label "Business Phone"^^xsd:string,
-        "Phone"^^xsd:string ;
+    rdfs:label "Business Phone"@en,
+        "Phone"@en ;
     rdfs:domain sf:Contact,
         sf:Lead ;
     rdfs:range rdfs:Literal .
@@ -579,19 +579,19 @@ sf:poDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:poNumber a owl:DatatypeProperty ;
-    rdfs:label "PO Number"^^xsd:string ;
+    rdfs:label "PO Number"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:postalCode a owl:DatatypeProperty ;
-    rdfs:label "Zip/Postal Code"^^xsd:string ;
+    rdfs:label "Zip/Postal Code"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:pricebook2Id a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "Price Book ID",
-        "Price Book ID"^^xsd:string ;
+        "Price Book ID"@en ;
     rdfs:domain sf:Contract,
         sf:Opportunity ;
     rdfs:range rdfs:Literal,
@@ -603,17 +603,17 @@ sf:probability a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:productCode a owl:DatatypeProperty ;
-    rdfs:label "Product Code"^^xsd:string ;
+    rdfs:label "Product Code"@en ;
     rdfs:domain sf:Product2 ;
     rdfs:range rdfs:Literal .
 
 sf:rating a owl:DatatypeProperty ;
-    rdfs:label "Rating"^^xsd:string ;
+    rdfs:label "Rating"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:salutation a owl:DatatypeProperty ;
-    rdfs:label "Salutation"^^xsd:string ;
+    rdfs:label "Salutation"@en ;
     rdfs:domain sf:Contact,
         sf:Lead ;
     rdfs:range rdfs:Literal .
@@ -621,43 +621,43 @@ sf:salutation a owl:DatatypeProperty ;
 sf:shipToContactId a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "Ship To Contact ID",
-        "Ship To Contact ID"^^xsd:string ;
+        "Ship To Contact ID"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal,
         sf:Contact .
 
 sf:shippingCity a owl:DatatypeProperty ;
-    rdfs:label "Shipping City"^^xsd:string ;
+    rdfs:label "Shipping City"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:shippingCountry a owl:DatatypeProperty ;
-    rdfs:label "Shipping Country"^^xsd:string ;
+    rdfs:label "Shipping Country"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:shippingPostalCode a owl:DatatypeProperty ;
-    rdfs:label "Shipping Zip/Postal Code"^^xsd:string ;
+    rdfs:label "Shipping Zip/Postal Code"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:shippingState a owl:DatatypeProperty ;
-    rdfs:label "Shipping State/Province"^^xsd:string ;
+    rdfs:label "Shipping State/Province"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:shippingStreet a owl:DatatypeProperty ;
-    rdfs:label "Shipping Street"^^xsd:string ;
+    rdfs:label "Shipping Street"@en ;
     rdfs:domain sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:specialTerms a owl:DatatypeProperty ;
-    rdfs:label "Special Terms"^^xsd:string ;
+    rdfs:label "Special Terms"@en ;
     rdfs:domain sf:Contract ;
     rdfs:range rdfs:Literal .
 
 sf:stageName a owl:DatatypeProperty ;
-    rdfs:label "Stage"^^xsd:string ;
+    rdfs:label "Stage"@en ;
     rdfs:domain sf:Opportunity ;
     rdfs:range rdfs:Literal .
 
@@ -667,30 +667,30 @@ sf:startDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:state a owl:DatatypeProperty ;
-    rdfs:label "State/Province"^^xsd:string ;
+    rdfs:label "State/Province"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:status a owl:DatatypeProperty ;
-    rdfs:label "Status"^^xsd:string ;
+    rdfs:label "Status"@en ;
     rdfs:domain sf:Contract,
         sf:Lead,
         sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:statusCode a owl:DatatypeProperty ;
-    rdfs:label "Status Category"^^xsd:string ;
+    rdfs:label "Status Category"@en ;
     rdfs:domain sf:Contract,
         sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:street a owl:DatatypeProperty ;
-    rdfs:label "Street"^^xsd:string ;
+    rdfs:label "Street"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 
 sf:title a owl:DatatypeProperty ;
-    rdfs:label "Title"^^xsd:string ;
+    rdfs:label "Title"@en ;
     rdfs:domain sf:Contact,
         sf:Lead ;
     rdfs:range rdfs:Literal .
@@ -706,14 +706,14 @@ sf:totalOpportunityQuantity a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:type a owl:DatatypeProperty ;
-    rdfs:label "Opportunity Type"^^xsd:string,
-        "Order Type"^^xsd:string ;
+    rdfs:label "Opportunity Type"@en,
+        "Order Type"@en ;
     rdfs:domain sf:Opportunity,
         sf:Order ;
     rdfs:range rdfs:Literal .
 
 sf:website a owl:DatatypeProperty ;
-    rdfs:label "Website"^^xsd:string ;
+    rdfs:label "Website"@en ;
     rdfs:domain sf:Lead ;
     rdfs:range rdfs:Literal .
 

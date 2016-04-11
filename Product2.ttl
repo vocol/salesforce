@@ -7,8 +7,8 @@
 
 sf:createdById a owl:DatatypeProperty,
         owl:ObjectProperty ;
-    rdfs:label "Created By ID"^^xsd:string,
-        "Created By ID" ;
+    rdfs:label "Created By ID",
+        "Created By ID"@en ;
     rdfs:domain sf:Product2 ;
     rdfs:range rdfs:Literal,
         sf:User .
@@ -19,17 +19,17 @@ sf:createdDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:description a owl:DatatypeProperty ;
-    rdfs:label "Product Description"^^xsd:string ;
+    rdfs:label "Product Description"@en ;
     rdfs:domain sf:Product2 ;
     rdfs:range rdfs:Literal .
 
 sf:family a owl:DatatypeProperty ;
-    rdfs:label "Product Family"^^xsd:string ;
+    rdfs:label "Product Family"@en ;
     rdfs:domain sf:Product2 ;
     rdfs:range rdfs:Literal .
 
 sf:id a owl:DatatypeProperty ;
-    rdfs:label "Product ID"^^xsd:string ;
+    rdfs:label "Product ID"@en ;
     rdfs:domain sf:Product2 ;
     rdfs:range rdfs:Literal .
 
@@ -49,12 +49,12 @@ sf:lastModifiedDate a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 sf:name a owl:DatatypeProperty ;
-    rdfs:label "Product Name"^^xsd:string ;
+    rdfs:label "Product Name"@en ;
     rdfs:domain sf:Product2 ;
     rdfs:range rdfs:Literal .
 
 sf:productCode a owl:DatatypeProperty ;
-    rdfs:label "Product Code"^^xsd:string ;
+    rdfs:label "Product Code"@en ;
     rdfs:domain sf:Product2 ;
     rdfs:range rdfs:Literal .
 
