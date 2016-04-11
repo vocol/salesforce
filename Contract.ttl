@@ -35,11 +35,6 @@ sf:companySignedDate a owl:DatatypeProperty ;
     rdfs:domain sf:Contract ;
     rdfs:range xsd:date .
 
-sf:companySignedId a owl:ObjectProperty ;
-    rdfs:label "Company Signed By ID"@en ;
-    rdfs:domain sf:Contract ;
-    rdfs:range sf:User .
-
 sf:contractNumber a owl:DatatypeProperty ;
     rdfs:label "Contract Number"@en ;
     rdfs:domain sf:Contract ;

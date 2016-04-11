@@ -1,0 +1,75 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <https://github.com/vocol/salesforce/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sf:createdDate a owl:DatatypeProperty ;
+    rdfs:label "Created Date"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:dateTime .
+
+sf:id a owl:DatatypeProperty ;
+    rdfs:label "Solution ID"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:string .
+
+sf:isDeleted a owl:DatatypeProperty ;
+    rdfs:label "Deleted"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:boolean .
+
+sf:isHtml a owl:DatatypeProperty ;
+    rdfs:label "Is Html"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:boolean .
+
+sf:isPublished a owl:DatatypeProperty ;
+    rdfs:label "Public"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:boolean .
+
+sf:isPublishedInPublicKb a owl:DatatypeProperty ;
+    rdfs:label "Visible in Public Knowledge Base"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:boolean .
+
+sf:isReviewed a owl:DatatypeProperty ;
+    rdfs:label "Reviewed"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:boolean .
+
+sf:lastModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Modified Date"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:dateTime .
+
+sf:solutionName a owl:DatatypeProperty ;
+    rdfs:label "Title"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:string .
+
+sf:solutionNote a owl:DatatypeProperty ;
+    rdfs:label "Description"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:string .
+
+sf:solutionNumber a owl:DatatypeProperty ;
+    rdfs:label "Solution Number"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:string .
+
+sf:status a owl:DatatypeProperty ;
+    rdfs:label "Status"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:string .
+
+sf:timesUsed a owl:DatatypeProperty ;
+    rdfs:label "Num Related Cases"@en ;
+    rdfs:domain sf:Solution ;
+    rdfs:range xsd:integer .
+
+sf:Solution a owl:Class ;
+    rdfs:label "Solution" .
+

@@ -55,11 +55,6 @@ sf:createdDate a owl:DatatypeProperty ;
     rdfs:domain sf:Lead ;
     rdfs:range xsd:dateTime .
 
-sf:dandbCompanyId a owl:ObjectProperty ;
-    rdfs:label "D&B Company ID"@en ;
-    rdfs:domain sf:Lead ;
-    rdfs:range sf:DandBCompany .
-
 sf:description a owl:DatatypeProperty ;
     rdfs:label "Description"@en ;
     rdfs:domain sf:Lead ;

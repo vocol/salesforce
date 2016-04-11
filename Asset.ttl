@@ -1,0 +1,90 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <https://github.com/vocol/salesforce/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sf:contactId a owl:ObjectProperty ;
+    rdfs:label "Contact ID"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range sf:Contact .
+
+sf:createdDate a owl:DatatypeProperty ;
+    rdfs:label "Created Date"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:dateTime .
+
+sf:description a owl:DatatypeProperty ;
+    rdfs:label "Description"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:string .
+
+sf:id a owl:DatatypeProperty ;
+    rdfs:label "Asset ID"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:string .
+
+sf:installDate a owl:DatatypeProperty ;
+    rdfs:label "Install Date"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:date .
+
+sf:isCompetitorProduct a owl:DatatypeProperty ;
+    rdfs:label "Competitor Asset"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:boolean .
+
+sf:isDeleted a owl:DatatypeProperty ;
+    rdfs:label "Deleted"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:boolean .
+
+sf:lastModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Modified Date"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:dateTime .
+
+sf:name a owl:DatatypeProperty ;
+    rdfs:label "Asset Name"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:string .
+
+sf:price a owl:DatatypeProperty ;
+    rdfs:label "Price"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:double .
+
+sf:product2Id a owl:ObjectProperty ;
+    rdfs:label "Product ID"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range sf:Product2 .
+
+sf:purchaseDate a owl:DatatypeProperty ;
+    rdfs:label "Purchase Date"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:date .
+
+sf:quantity a owl:DatatypeProperty ;
+    rdfs:label "Quantity"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:double .
+
+sf:serialNumber a owl:DatatypeProperty ;
+    rdfs:label "Serial Number"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:string .
+
+sf:status a owl:DatatypeProperty ;
+    rdfs:label "Status"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:string .
+
+sf:usageEndDate a owl:DatatypeProperty ;
+    rdfs:label "Usage End Date"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range xsd:date .
+
+sf:Asset a owl:Class ;
+    rdfs:label "Asset" .
+

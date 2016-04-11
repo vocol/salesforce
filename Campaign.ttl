@@ -1,0 +1,135 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <https://github.com/vocol/salesforce/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sf:actualCost a owl:DatatypeProperty ;
+    rdfs:label "Actual Cost"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:double .
+
+sf:amountAllOpportunities a owl:DatatypeProperty ;
+    rdfs:label "Total Value Opportunities"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:double .
+
+sf:amountWonOpportunities a owl:DatatypeProperty ;
+    rdfs:label "Total Value Won Opportunities"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:double .
+
+sf:budgetedCost a owl:DatatypeProperty ;
+    rdfs:label "Budgeted Cost"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:double .
+
+sf:createdDate a owl:DatatypeProperty ;
+    rdfs:label "Created Date"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:dateTime .
+
+sf:description a owl:DatatypeProperty ;
+    rdfs:label "Description"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:string .
+
+sf:endDate a owl:DatatypeProperty ;
+    rdfs:label "End Date"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:date .
+
+sf:expectedResponse a owl:DatatypeProperty ;
+    rdfs:label "Expected Response (%)"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:double .
+
+sf:expectedRevenue a owl:DatatypeProperty ;
+    rdfs:label "Expected Revenue"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:double .
+
+sf:id a owl:DatatypeProperty ;
+    rdfs:label "Campaign ID"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:string .
+
+sf:isActive a owl:DatatypeProperty ;
+    rdfs:label "Active"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:boolean .
+
+sf:isDeleted a owl:DatatypeProperty ;
+    rdfs:label "Deleted"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:boolean .
+
+sf:lastModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Modified Date"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:dateTime .
+
+sf:name a owl:DatatypeProperty ;
+    rdfs:label "Name"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:string .
+
+sf:numberOfContacts a owl:DatatypeProperty ;
+    rdfs:label "Total Contacts"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:integer .
+
+sf:numberOfConvertedLeads a owl:DatatypeProperty ;
+    rdfs:label "Converted Leads"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:integer .
+
+sf:numberOfLeads a owl:DatatypeProperty ;
+    rdfs:label "Total Leads"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:integer .
+
+sf:numberOfOpportunities a owl:DatatypeProperty ;
+    rdfs:label "Num Total Opportunities"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:integer .
+
+sf:numberOfResponses a owl:DatatypeProperty ;
+    rdfs:label "Total Responses"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:integer .
+
+sf:numberOfWonOpportunities a owl:DatatypeProperty ;
+    rdfs:label "Num Won Opportunities"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:integer .
+
+sf:numberSent a owl:DatatypeProperty ;
+    rdfs:label "Num Sent"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:double .
+
+sf:parentId a owl:ObjectProperty ;
+    rdfs:label "Parent Campaign ID"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range sf:Campaign .
+
+sf:startDate a owl:DatatypeProperty ;
+    rdfs:label "Start Date"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:date .
+
+sf:status a owl:DatatypeProperty ;
+    rdfs:label "Status"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:string .
+
+sf:type a owl:DatatypeProperty ;
+    rdfs:label "Type"@en ;
+    rdfs:domain sf:Campaign ;
+    rdfs:range xsd:string .
+
+sf:Campaign a owl:Class ;
+    rdfs:label "Campaign" .
+

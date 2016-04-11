@@ -1,0 +1,120 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <https://github.com/vocol/salesforce/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sf:assetId a owl:ObjectProperty ;
+    rdfs:label "Asset ID"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range sf:Asset .
+
+sf:caseNumber a owl:DatatypeProperty ;
+    rdfs:label "Case Number"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:closedDate a owl:DatatypeProperty ;
+    rdfs:label "Closed Date"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:dateTime .
+
+sf:contactId a owl:ObjectProperty ;
+    rdfs:label "Contact ID"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range sf:Contact .
+
+sf:createdDate a owl:DatatypeProperty ;
+    rdfs:label "Created Date"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:dateTime .
+
+sf:description a owl:DatatypeProperty ;
+    rdfs:label "Description"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:id a owl:DatatypeProperty ;
+    rdfs:label "Case ID"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:isClosed a owl:DatatypeProperty ;
+    rdfs:label "Closed"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:boolean .
+
+sf:isDeleted a owl:DatatypeProperty ;
+    rdfs:label "Deleted"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:boolean .
+
+sf:isEscalated a owl:DatatypeProperty ;
+    rdfs:label "Escalated"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:boolean .
+
+sf:lastModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Modified Date"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:dateTime .
+
+sf:origin a owl:DatatypeProperty ;
+    rdfs:label "Case Origin"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:parentId a owl:ObjectProperty ;
+    rdfs:label "Parent Case ID"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range sf:Case .
+
+sf:priority a owl:DatatypeProperty ;
+    rdfs:label "Priority"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:reason a owl:DatatypeProperty ;
+    rdfs:label "Case Reason"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:status a owl:DatatypeProperty ;
+    rdfs:label "Status"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:subject a owl:DatatypeProperty ;
+    rdfs:label "Subject"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:suppliedCompany a owl:DatatypeProperty ;
+    rdfs:label "Company"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:suppliedEmail a owl:DatatypeProperty ;
+    rdfs:label "Email Address"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:suppliedName a owl:DatatypeProperty ;
+    rdfs:label "Name"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:suppliedPhone a owl:DatatypeProperty ;
+    rdfs:label "Phone"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:type a owl:DatatypeProperty ;
+    rdfs:label "Case Type"@en ;
+    rdfs:domain sf:Case ;
+    rdfs:range xsd:string .
+
+sf:Case a owl:Class ;
+    rdfs:label "Case" .
+

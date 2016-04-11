@@ -1,0 +1,200 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <https://github.com/vocol/salesforce/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sf:accountNumber a owl:DatatypeProperty ;
+    rdfs:label "Account Number"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:accountSource a owl:DatatypeProperty ;
+    rdfs:label "Account Source"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:annualRevenue a owl:DatatypeProperty ;
+    rdfs:label "Annual Revenue"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:double .
+
+sf:billingCity a owl:DatatypeProperty ;
+    rdfs:label "Billing City"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:billingCountry a owl:DatatypeProperty ;
+    rdfs:label "Billing Country"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:billingPostalCode a owl:DatatypeProperty ;
+    rdfs:label "Billing Zip/Postal Code"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:billingState a owl:DatatypeProperty ;
+    rdfs:label "Billing State/Province"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:billingStreet a owl:DatatypeProperty ;
+    rdfs:label "Billing Street"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:createdDate a owl:DatatypeProperty ;
+    rdfs:label "Created Date"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:dateTime .
+
+sf:description a owl:DatatypeProperty ;
+    rdfs:label "Account Description"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:dunsNumber a owl:DatatypeProperty ;
+    rdfs:label "D-U-N-S Number"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:fax a owl:DatatypeProperty ;
+    rdfs:label "Account Fax"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:id a owl:DatatypeProperty ;
+    rdfs:label "Account ID"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:industry a owl:DatatypeProperty ;
+    rdfs:label "Industry"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:isDeleted a owl:DatatypeProperty ;
+    rdfs:label "Deleted"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:boolean .
+
+sf:jigsawCompanyId a owl:DatatypeProperty ;
+    rdfs:label "Jigsaw Company ID"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:lastModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Modified Date"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:dateTime .
+
+sf:naicsCode a owl:DatatypeProperty ;
+    rdfs:label "NAICS Code"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:naicsDesc a owl:DatatypeProperty ;
+    rdfs:label "NAICS Description"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:name a owl:DatatypeProperty ;
+    rdfs:label "Account Name"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:numberOfEmployees a owl:DatatypeProperty ;
+    rdfs:label "Employees"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:integer .
+
+sf:ownership a owl:DatatypeProperty ;
+    rdfs:label "Ownership"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:parentId a owl:ObjectProperty ;
+    rdfs:label "Parent Account ID"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range sf:Account .
+
+sf:phone a owl:DatatypeProperty ;
+    rdfs:label "Account Phone"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:rating a owl:DatatypeProperty ;
+    rdfs:label "Account Rating"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:shippingCity a owl:DatatypeProperty ;
+    rdfs:label "Shipping City"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:shippingCountry a owl:DatatypeProperty ;
+    rdfs:label "Shipping Country"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:shippingPostalCode a owl:DatatypeProperty ;
+    rdfs:label "Shipping Zip/Postal Code"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:shippingState a owl:DatatypeProperty ;
+    rdfs:label "Shipping State/Province"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:shippingStreet a owl:DatatypeProperty ;
+    rdfs:label "Shipping Street"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:sic a owl:DatatypeProperty ;
+    rdfs:label "SIC Code"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:sicDesc a owl:DatatypeProperty ;
+    rdfs:label "SIC Description"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:site a owl:DatatypeProperty ;
+    rdfs:label "Account Site"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:tickerSymbol a owl:DatatypeProperty ;
+    rdfs:label "Ticker Symbol"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:tradestyle a owl:DatatypeProperty ;
+    rdfs:label "Tradestyle"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:type a owl:DatatypeProperty ;
+    rdfs:label "Account Type"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:website a owl:DatatypeProperty ;
+    rdfs:label "Website"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:yearStarted a owl:DatatypeProperty ;
+    rdfs:label "Year Started"@en ;
+    rdfs:domain sf:Account ;
+    rdfs:range xsd:string .
+
+sf:Account a owl:Class ;
+    rdfs:label "Account" .
+

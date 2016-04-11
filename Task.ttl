@@ -1,0 +1,160 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <https://github.com/vocol/salesforce/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sf:activityDate a owl:DatatypeProperty ;
+    rdfs:label "Due Date Only"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:date .
+
+sf:callDisposition a owl:DatatypeProperty ;
+    rdfs:label "Call Result"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:string .
+
+sf:callDurationInSeconds a owl:DatatypeProperty ;
+    rdfs:label "Call Duration"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:integer .
+
+sf:callObject a owl:DatatypeProperty ;
+    rdfs:label "Call Object Identifier"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:string .
+
+sf:callType a owl:DatatypeProperty ;
+    rdfs:label "Call Type"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:string .
+
+sf:createdDate a owl:DatatypeProperty ;
+    rdfs:label "Created Date"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:dateTime .
+
+sf:description a owl:DatatypeProperty ;
+    rdfs:label "Description"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:string .
+
+sf:id a owl:DatatypeProperty ;
+    rdfs:label "Activity ID"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:string .
+
+sf:isArchived a owl:DatatypeProperty ;
+    rdfs:label "Archived"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:boolean .
+
+sf:isClosed a owl:DatatypeProperty ;
+    rdfs:label "Closed"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:boolean .
+
+sf:isDeleted a owl:DatatypeProperty ;
+    rdfs:label "Deleted"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:boolean .
+
+sf:isRecurrence a owl:DatatypeProperty ;
+    rdfs:label "Create Recurring Series of Tasks"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:boolean .
+
+sf:isReminderSet a owl:DatatypeProperty ;
+    rdfs:label "Reminder Set"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:boolean .
+
+sf:lastModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Modified Date"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:dateTime .
+
+sf:priority a owl:DatatypeProperty ;
+    rdfs:label "Priority"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:string .
+
+sf:recurrenceActivityId a owl:ObjectProperty ;
+    rdfs:label "Recurrence Activity ID"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range sf:Task .
+
+sf:recurrenceDayOfMonth a owl:DatatypeProperty ;
+    rdfs:label "Recurrence Day of Month"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:integer .
+
+sf:recurrenceDayOfWeekMask a owl:DatatypeProperty ;
+    rdfs:label "Recurrence Day of Week Mask"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:integer .
+
+sf:recurrenceEndDateOnly a owl:DatatypeProperty ;
+    rdfs:label "End Date"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:date .
+
+sf:recurrenceInstance a owl:DatatypeProperty ;
+    rdfs:label "Recurrence Instance"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:string .
+
+sf:recurrenceInterval a owl:DatatypeProperty ;
+    rdfs:label "Recurrence Interval"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:integer .
+
+sf:recurrenceMonthOfYear a owl:DatatypeProperty ;
+    rdfs:label "Recurrence Month of Year"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:string .
+
+sf:recurrenceStartDateOnly a owl:DatatypeProperty ;
+    rdfs:label "Start Date"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:date .
+
+sf:recurrenceTimeZoneSidKey a owl:DatatypeProperty ;
+    rdfs:label "Recurrence Time Zone"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:string .
+
+sf:recurrenceType a owl:DatatypeProperty ;
+    rdfs:label "Recurrence Type"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:string .
+
+sf:reminderDateTime a owl:DatatypeProperty ;
+    rdfs:label "Reminder Date/Time"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:dateTime .
+
+sf:status a owl:DatatypeProperty ;
+    rdfs:label "Status"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:string .
+
+sf:subject a owl:DatatypeProperty ;
+    rdfs:label "Subject"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range xsd:string .
+
+sf:whatId a owl:ObjectProperty ;
+    rdfs:label "Related To ID"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range sf:Account .
+
+sf:whoId a owl:ObjectProperty ;
+    rdfs:label "Name ID"@en ;
+    rdfs:domain sf:Task ;
+    rdfs:range sf:Contact .
+
+sf:Task a owl:Class ;
+    rdfs:label "Task" .
+

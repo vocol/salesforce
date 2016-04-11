@@ -35,11 +35,6 @@ sf:billingStreet a owl:DatatypeProperty ;
     rdfs:domain sf:Order ;
     rdfs:range xsd:string .
 
-sf:companyAuthorizedById a owl:ObjectProperty ;
-    rdfs:label "Company Authorized By ID"@en ;
-    rdfs:domain sf:Order ;
-    rdfs:range sf:User .
-
 sf:companyAuthorizedDate a owl:DatatypeProperty ;
     rdfs:label "Company Authorized Date"@en ;
     rdfs:domain sf:Order ;
