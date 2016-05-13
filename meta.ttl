@@ -16,7 +16,8 @@ sf: a owl:Ontology ;
     dct:creator <https://github.com/schroet> ;
     dct:modified "2016-04-11"^^xsd:date ;
     dct:publisher <http://dbpedia.org/resource/University_of_Bonn> ;
-    void:preferredNamespacePrefix "sf" ;
+    vann:preferredNamespacePrefix "sf" ;
+    vann:preferredNamespaceUri "https://github.com/vocol/salesforce/" ;
     void:vocabulary dct:,
         <http://purl.org/ontology/olo/core#>,
         vann:,
