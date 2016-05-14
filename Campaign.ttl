@@ -53,7 +53,7 @@ sf:expectedRevenue a owl:DatatypeProperty ;
 sf:id a owl:DatatypeProperty ;
     rdfs:label "Campaign ID"@en ;
     rdfs:domain sf:Campaign ;
-    rdfs:range xsd:string .
+    rdfs:range rdfs:Literal .
 
 sf:isActive a owl:DatatypeProperty ;
     rdfs:label "Active"@en ;

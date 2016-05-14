@@ -38,7 +38,7 @@ sf:description a owl:DatatypeProperty ;
 sf:id a owl:DatatypeProperty ;
     rdfs:label "Case ID"@en ;
     rdfs:domain sf:Case ;
-    rdfs:range xsd:string .
+    rdfs:range rdfs:Literal .
 
 sf:isClosed a owl:DatatypeProperty ;
     rdfs:label "Closed"@en ;

@@ -14,7 +14,7 @@ sf: a owl:Ontology ;
     rdfs:label "Salesforce"@en ;
     dct:created "2016-03-01"^^xsd:date ;
     dct:creator <https://github.com/schroet> ;
-    dct:modified "2016-04-11"^^xsd:date ;
+    dct:modified "2016-05-14"^^xsd:date ;
     dct:publisher <http://dbpedia.org/resource/University_of_Bonn> ;
     vann:preferredNamespacePrefix "sf" ;
     vann:preferredNamespaceUri "https://github.com/vocol/salesforce/" ;

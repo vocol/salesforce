@@ -68,7 +68,7 @@ sf:hasOpportunityLineItem a owl:DatatypeProperty ;
 sf:id a owl:DatatypeProperty ;
     rdfs:label "Opportunity ID"@en ;
     rdfs:domain sf:Opportunity ;
-    rdfs:range xsd:string .
+    rdfs:range rdfs:Literal .
 
 sf:isClosed a owl:DatatypeProperty ;
     rdfs:label "Closed"@en ;
@@ -110,10 +110,10 @@ sf:nextStep a owl:DatatypeProperty ;
     rdfs:domain sf:Opportunity ;
     rdfs:range xsd:string .
 
-sf:pricebook2Id a owl:ObjectProperty ;
+sf:pricebookId a owl:ObjectProperty ;
     rdfs:label "Price Book ID"@en ;
     rdfs:domain sf:Opportunity ;
-    rdfs:range sf:Pricebook2 .
+    rdfs:range sf:Pricebook .
 
 sf:probability a owl:DatatypeProperty ;
     rdfs:label "Probability (%)"@en ;

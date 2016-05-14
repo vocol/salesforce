@@ -43,7 +43,7 @@ sf:description a owl:DatatypeProperty ;
 sf:id a owl:DatatypeProperty ;
     rdfs:label "Activity ID"@en ;
     rdfs:domain sf:Task ;
-    rdfs:range xsd:string .
+    rdfs:range rdfs:Literal .
 
 sf:isArchived a owl:DatatypeProperty ;
     rdfs:label "Archived"@en ;

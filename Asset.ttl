@@ -23,7 +23,7 @@ sf:description a owl:DatatypeProperty ;
 sf:id a owl:DatatypeProperty ;
     rdfs:label "Asset ID"@en ;
     rdfs:domain sf:Asset ;
-    rdfs:range xsd:string .
+    rdfs:range rdfs:Literal .
 
 sf:installDate a owl:DatatypeProperty ;
     rdfs:label "Install Date"@en ;
@@ -55,10 +55,10 @@ sf:price a owl:DatatypeProperty ;
     rdfs:domain sf:Asset ;
     rdfs:range xsd:double .
 
-sf:product2Id a owl:ObjectProperty ;
+sf:productId a owl:ObjectProperty ;
     rdfs:label "Product ID"@en ;
     rdfs:domain sf:Asset ;
-    rdfs:range sf:Product2 .
+    rdfs:range sf:Product .
 
 sf:purchaseDate a owl:DatatypeProperty ;
     rdfs:label "Purchase Date"@en ;

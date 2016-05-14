@@ -1,0 +1,50 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <https://github.com/vocol/salesforce/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sf:createdDate a owl:DatatypeProperty ;
+    rdfs:label "Created Date"@en ;
+    rdfs:domain sf:Pricebook ;
+    rdfs:range xsd:dateTime .
+
+sf:description a owl:DatatypeProperty ;
+    rdfs:label "Description"@en ;
+    rdfs:domain sf:Pricebook ;
+    rdfs:range xsd:string .
+
+sf:id a owl:DatatypeProperty ;
+    rdfs:label "Price Book ID"@en ;
+    rdfs:domain sf:Pricebook ;
+    rdfs:range rdfs:Literal .
+
+sf:isActive a owl:DatatypeProperty ;
+    rdfs:label "Active"@en ;
+    rdfs:domain sf:Pricebook ;
+    rdfs:range xsd:boolean .
+
+sf:isDeleted a owl:DatatypeProperty ;
+    rdfs:label "Deleted"@en ;
+    rdfs:domain sf:Pricebook ;
+    rdfs:range xsd:boolean .
+
+sf:isStandard a owl:DatatypeProperty ;
+    rdfs:label "Is Standard Price Book"@en ;
+    rdfs:domain sf:Pricebook ;
+    rdfs:range xsd:boolean .
+
+sf:lastModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "Last Modified Date"@en ;
+    rdfs:domain sf:Pricebook ;
+    rdfs:range xsd:dateTime .
+
+sf:name a owl:DatatypeProperty ;
+    rdfs:label "Price Book Name"@en ;
+    rdfs:domain sf:Pricebook ;
+    rdfs:range xsd:string .
+
+sf:Pricebook a owl:Class ;
+    rdfs:label "Pricebook" .
+

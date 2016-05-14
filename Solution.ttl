@@ -13,7 +13,7 @@ sf:createdDate a owl:DatatypeProperty ;
 sf:id a owl:DatatypeProperty ;
     rdfs:label "Solution ID"@en ;
     rdfs:domain sf:Solution ;
-    rdfs:range xsd:string .
+    rdfs:range rdfs:Literal .
 
 sf:isDeleted a owl:DatatypeProperty ;
     rdfs:label "Deleted"@en ;

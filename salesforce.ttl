@@ -240,8 +240,8 @@ sf:createdDate a owl:DatatypeProperty ;
         sf:Lead,
         sf:Opportunity,
         sf:Order,
-        sf:Pricebook2,
-        sf:Product2,
+        sf:Pricebook,
+        sf:Product,
         sf:Solution,
         sf:Task ;
     rdfs:range xsd:dateTime .
@@ -292,8 +292,8 @@ sf:description a owl:DatatypeProperty ;
         sf:Lead,
         sf:Opportunity,
         sf:Order,
-        sf:Pricebook2,
-        sf:Product2,
+        sf:Pricebook,
+        sf:Product,
         sf:Task ;
     rdfs:range xsd:string .
 
@@ -358,7 +358,7 @@ sf:expectedRevenue a owl:DatatypeProperty ;
 
 sf:family a owl:DatatypeProperty ;
     rdfs:label "Product Family"@en ;
-    rdfs:domain sf:Product2 ;
+    rdfs:domain sf:Product ;
     rdfs:range xsd:string .
 
 sf:fax a owl:DatatypeProperty ;
@@ -440,11 +440,11 @@ sf:id a owl:DatatypeProperty ;
         sf:Lead,
         sf:Opportunity,
         sf:Order,
-        sf:Pricebook2,
-        sf:Product2,
+        sf:Pricebook,
+        sf:Product,
         sf:Solution,
         sf:Task ;
-    rdfs:range xsd:string .
+    rdfs:range rdfs:Literal .
 
 sf:industry a owl:DatatypeProperty ;
     rdfs:label "Industry"@en ;
@@ -460,8 +460,8 @@ sf:installDate a owl:DatatypeProperty ;
 sf:isActive a owl:DatatypeProperty ;
     rdfs:label "Active"@en ;
     rdfs:domain sf:Campaign,
-        sf:Pricebook2,
-        sf:Product2 ;
+        sf:Pricebook,
+        sf:Product ;
     rdfs:range xsd:boolean .
 
 sf:isAllDayEvent a owl:DatatypeProperty ;
@@ -509,8 +509,8 @@ sf:isDeleted a owl:DatatypeProperty ;
         sf:Lead,
         sf:Opportunity,
         sf:Order,
-        sf:Pricebook2,
-        sf:Product2,
+        sf:Pricebook,
+        sf:Product,
         sf:Solution,
         sf:Task ;
     rdfs:range xsd:boolean .
@@ -571,7 +571,7 @@ sf:isReviewed a owl:DatatypeProperty ;
 
 sf:isStandard a owl:DatatypeProperty ;
     rdfs:label "Is Standard Price Book"@en ;
-    rdfs:domain sf:Pricebook2 ;
+    rdfs:domain sf:Pricebook ;
     rdfs:range xsd:boolean .
 
 sf:isUnreadByOwner a owl:DatatypeProperty ;
@@ -606,8 +606,8 @@ sf:lastModifiedDate a owl:DatatypeProperty ;
         sf:Lead,
         sf:Opportunity,
         sf:Order,
-        sf:Pricebook2,
-        sf:Product2,
+        sf:Pricebook,
+        sf:Product,
         sf:Solution,
         sf:Task ;
     rdfs:range xsd:dateTime .
@@ -686,8 +686,8 @@ sf:name a owl:DatatypeProperty ;
         sf:Lead,
         sf:Opportunity,
         sf:Order,
-        sf:Pricebook2,
-        sf:Product2 ;
+        sf:Pricebook,
+        sf:Product ;
     rdfs:range xsd:string .
 
 sf:nextStep a owl:DatatypeProperty ;
@@ -831,11 +831,11 @@ sf:price a owl:DatatypeProperty ;
     rdfs:domain sf:Asset ;
     rdfs:range xsd:double .
 
-sf:pricebook2Id a owl:ObjectProperty ;
+sf:pricebookId a owl:ObjectProperty ;
     rdfs:label "Price Book ID"@en ;
     rdfs:domain sf:Contract,
         sf:Opportunity ;
-    rdfs:range sf:Pricebook2 .
+    rdfs:range sf:Pricebook .
 
 sf:priority a owl:DatatypeProperty ;
     rdfs:label "Priority"@en ;
@@ -848,15 +848,15 @@ sf:probability a owl:DatatypeProperty ;
     rdfs:domain sf:Opportunity ;
     rdfs:range xsd:double .
 
-sf:product2Id a owl:ObjectProperty ;
-    rdfs:label "Product ID"@en ;
-    rdfs:domain sf:Asset ;
-    rdfs:range sf:Product2 .
-
 sf:productCode a owl:DatatypeProperty ;
     rdfs:label "Product Code"@en ;
-    rdfs:domain sf:Product2 ;
+    rdfs:domain sf:Product ;
     rdfs:range xsd:string .
+
+sf:productId a owl:ObjectProperty ;
+    rdfs:label "Product ID"@en ;
+    rdfs:domain sf:Asset ;
+    rdfs:range sf:Product .
 
 sf:purchaseDate a owl:DatatypeProperty ;
     rdfs:label "Purchase Date"@en ;
@@ -1181,11 +1181,11 @@ sf:yearStarted a owl:DatatypeProperty ;
     rdfs:domain sf:Account ;
     rdfs:range xsd:string .
 
-sf:Pricebook2 a owl:Class ;
-    rdfs:label "Pricebook2" .
+sf:Pricebook a owl:Class ;
+    rdfs:label "Pricebook" .
 
-sf:Product2 a owl:Class ;
-    rdfs:label "Product2" .
+sf:Product a owl:Class ;
+    rdfs:label "Product" .
 
 sf:Solution a owl:Class ;
     rdfs:label "Solution" .

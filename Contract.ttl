@@ -78,7 +78,7 @@ sf:endDate a owl:DatatypeProperty ;
 sf:id a owl:DatatypeProperty ;
     rdfs:label "Contract ID"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range xsd:string .
+    rdfs:range rdfs:Literal .
 
 sf:isDeleted a owl:DatatypeProperty ;
     rdfs:label "Deleted"@en ;
@@ -100,10 +100,10 @@ sf:ownerExpirationNotice a owl:DatatypeProperty ;
     rdfs:domain sf:Contract ;
     rdfs:range xsd:string .
 
-sf:pricebook2Id a owl:ObjectProperty ;
+sf:pricebookId a owl:ObjectProperty ;
     rdfs:label "Price Book ID"@en ;
     rdfs:domain sf:Contract ;
-    rdfs:range sf:Pricebook2 .
+    rdfs:range sf:Pricebook .
 
 sf:specialTerms a owl:DatatypeProperty ;
     rdfs:label "Special Terms"@en ;

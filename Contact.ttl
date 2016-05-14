@@ -68,7 +68,7 @@ sf:homePhone a owl:DatatypeProperty ;
 sf:id a owl:DatatypeProperty ;
     rdfs:label "Contact ID"@en ;
     rdfs:domain sf:Contact ;
-    rdfs:range xsd:string .
+    rdfs:range rdfs:Literal .
 
 sf:isDeleted a owl:DatatypeProperty ;
     rdfs:label "Deleted"@en ;
